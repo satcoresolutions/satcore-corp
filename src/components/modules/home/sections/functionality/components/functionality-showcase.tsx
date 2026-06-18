@@ -18,7 +18,7 @@ export default function FunctionalityShowcase() {
       }}
     >
       <Card
-        variant="floating"
+        variant="glass"
         className="p-8 md:p-10"
       >
         <FunctionalityList />
