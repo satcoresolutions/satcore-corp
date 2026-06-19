@@ -1,11 +1,11 @@
 import type { CompanyConfig } from "@/types/site.types";
 
 export const companyConfig: CompanyConfig = {
-  name:         "company one",
+  name:         "SatCore",
   email:        "https://satcore.solutions/",
-  whatsapp:     "",
+  whatsapp:     "3022016072",
   website:      "https://satcore.solutions/",
-  organization: "",
+  organization: "satcore",
   address: {
     label: "Cl. 93 #12-28, Chapinero, Bogotá, Colombia",
     query: "Cl 93 12-28 Chapinero Bogotá",

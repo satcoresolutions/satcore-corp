@@ -15,13 +15,16 @@ export default function FAQ() {
     <Section
       id="faq"
       spacing="xl"
-      className="m-10"
+      className="mt-10"
     >
       <Container>
         <div
           className="
             mx-auto
+            w-full
             max-w-5xl
+            px-4
+            md:px-6
           "
         >
           <FAQContent />
