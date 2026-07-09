@@ -12,14 +12,16 @@ export default function FooterLegal() {
   const t = navigationContent[lang];
 
   return (
-    <Section spacing="none" className="space-y-4">
+    <Section className="px-0"
+      style={{ paddingTop: 5, paddingBottom: 0 }}
+    >
       {/* TITLE */}
-      <h3 className="text-text-muted">
+      <h5>
         {t.privacy ? "Legal" : "Legal"}
-      </h3>
+      </h5>
 
       {/* LINKS */}
-      <div className="flex flex-wrap gap-x-6 gap-y-2">
+      <div className="flex flex-wrap gap-x-4 gap-y-2">
         {navigationConfig.legal.map((item) => (
           <Link key={item.href} href={item.href}>
             {t[item.key]}

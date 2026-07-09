@@ -1,3 +1,14 @@
+"use client";
+
+import {
+  createPortal,
+} from "react-dom";
+
+import {
+  useEffect,
+  useState,
+} from "react";
+
 import type {
   ModalProps,
 } from "./modal.types";
@@ -11,49 +22,52 @@ export default function Modal({
   children,
   variant = "default",
   onClose,
+  contentClassName,
 }: ModalProps) {
-  if (!open) {
+  const [mounted, setMounted] =
+    useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || !open) {
     return null;
   }
 
   const variantStyle =
     modalVariants[variant];
 
-  return (
+  return createPortal(
     <div
       className="
         fixed
         inset-0
-        z-50
+        z-9999
         flex
         items-center
         justify-center
       "
     >
-      {/* BACKDROP */}
-
       <div
         className="
           absolute
           inset-0
+          bg-black/50
         "
-        style={{
-          background:
-            "rgba(0, 0, 0, 0.5)",
-        }}
         onClick={onClose}
       />
 
-      {/* CONTENT */}
-
       <div
-        className="
+        className={`
           relative
           z-10
           w-full
-          max-w-lg
-          p-6
-        "
+          ${
+            contentClassName ??
+            "max-w-lg p-6"
+          }
+        `}
         style={{
           borderRadius:
             "var(--radius-modal)",
@@ -63,6 +77,7 @@ export default function Modal({
       >
         {children}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

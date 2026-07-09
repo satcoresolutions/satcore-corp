@@ -5,24 +5,44 @@ export const navigationConfig = {
       href: "/",
     },
     {
-      key: "products",
-      href: "/products",
+      key: "about",
+      href: "/nosotros",
     },
+    {
+      key: "services",
+      href: "/services",
+    },
+    {
+      key: "portfolio",
+      href: "/portafolio",
+    },
+    {
+      key: "blog",
+      href: "/blog",
+    }
   ],
 
   footer: [
     {
-      key: "home",
-      href: "/",
+      key: "about",
+      href: "/nosotros",
     },
     {
-      key: "products",
-      href: "/products",
+      key: "services",
+      href: "/services",
+    },
+    {
+      key: "portfolio",
+      href: "/portfolio",
     },
     {
       key: "contact",
       href: "/contact",
     },
+    {
+      key: "blog",
+      href: "/blog",
+    }
   ],
 
   legal: [
@@ -33,6 +53,10 @@ export const navigationConfig = {
     {
       key: "terms",
       href: "/terms",
+    },
+    {
+      key: "faq",
+      href: "/faq",
     },
   ],
 } as const;

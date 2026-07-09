@@ -13,11 +13,11 @@ export default function FooterMap() {
   )}&output=embed`;
 
   return (
-    <Section spacing="none" className="space-y-4">
+    <Section spacing="none" style={{ paddingTop: 0, paddingBottom: 0 }}>
       {/* TITLE */}
-      <h3 className="text-text-muted">
+      <h5 className="text-text-primary">
         {footerContent[lang].sections.map.title}
-      </h3>
+      </h5>
 
       {/* MAP */}
       <div className="overflow-hidden rounded-xl border border-surface-secondary bg-surface">

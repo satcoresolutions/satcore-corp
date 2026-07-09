@@ -25,6 +25,7 @@ export default function Section({
       {...props}
       className={`
         w-full
+        py-20
         ${className}
       `}
       style={{

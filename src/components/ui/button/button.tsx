@@ -1,22 +1,20 @@
 import Link from "next/link";
 
-import type {
-  ButtonProps,
-} from "./button.types";
-
-import {
-  buttonVariants,
-} from "./button.variants";
+import type { ButtonProps } from "./button.types";
+import { buttonVariants } from "./button.variants";
 
 export default function Button({
   children,
   href,
   variant = "primary",
   className = "",
-  onClick,
+  ariaLabel,
+  style,
+  target,
+  rel,
+  ...props
 }: ButtonProps) {
-  const style =
-    buttonVariants[variant];
+  const variantStyle = buttonVariants[variant];
 
   const classes = `
     inline-flex
@@ -35,12 +33,14 @@ export default function Button({
     return (
       <Link
         href={href}
+        target={target}
+        rel={rel}
+        aria-label={ariaLabel}
         className={classes}
         style={{
+          ...variantStyle,
+          borderRadius: "var(--radius-button)",
           ...style,
-
-          borderRadius:
-            "var(--radius-button)",
         }}
       >
         {children}
@@ -50,13 +50,13 @@ export default function Button({
 
   return (
     <button
-      onClick={onClick}
+      {...props}
+      aria-label={ariaLabel}
       className={classes}
       style={{
+        ...variantStyle,
+        borderRadius: "var(--radius-button)",
         ...style,
-
-        borderRadius:
-          "var(--radius-button)",
       }}
     >
       {children}

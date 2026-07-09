@@ -1,10 +1,6 @@
-interface FormFieldsProps {
-  content: {
-    name: string;
-    email: string;
-    message: string;
-  };
-}
+import type {
+  FormFieldsProps,
+} from "../types/form.types";
 
 export default function FormFields({
   content,
@@ -13,7 +9,7 @@ export default function FormFields({
     <>
       <input
         type="text"
-        placeholder={content.name}
+        placeholder={content.fields.name}
         className="
           w-full
           rounded-xl
@@ -25,7 +21,7 @@ export default function FormFields({
 
       <input
         type="email"
-        placeholder={content.email}
+        placeholder={content.fields.email}
         className="
           w-full
           rounded-xl
@@ -37,7 +33,7 @@ export default function FormFields({
 
       <textarea
         rows={6}
-        placeholder={content.message}
+        placeholder={content.fields.message}
         className="
           w-full
           rounded-xl

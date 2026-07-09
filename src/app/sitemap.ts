@@ -1,12 +1,41 @@
-import type { MetadataRoute } from "next";
+import type {
+  MetadataRoute,
+} from "next";
+
+import {
+  siteConfig,
+} from "@/config/site.config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+
   return [
     {
-      url: "https://www.satcore.solutions",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+      url: siteConfig.url,
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 1,
+    },
+
+    {
+      url: `${siteConfig.url}/services`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+
+    {
+      url: `${siteConfig.url}/portfolio`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+
+    {
+      url: `${siteConfig.url}/contact`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
   ];
 }

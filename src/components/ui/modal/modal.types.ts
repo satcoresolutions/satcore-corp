@@ -13,4 +13,6 @@ export interface ModalProps {
     | "default"
     | "elevated"
     | "glass";
+
+  contentClassName?: string;
 }

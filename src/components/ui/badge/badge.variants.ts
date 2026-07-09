@@ -12,13 +12,16 @@ export const badgeVariants: Record<
 > = {
   default: {
     background:
-      "var(--color-surface)",
+      "color-mix(in srgb, var(--color-surface) 92%, white 8%)",
 
     color:
-      "var(--text-primary)",
+      "var(--color-text-secondary)",
 
     border:
       "1px solid var(--color-border)",
+
+    boxShadow:
+      "0 1px 2px rgba(0,0,0,.06)",
   },
 
   primary: {
@@ -26,61 +29,79 @@ export const badgeVariants: Record<
       "var(--color-primary)",
 
     color:
-      "var(--color-primary-foreground)",
+      "var(--color-accent)",
+
+    border:
+      "1px solid transparent",
+
+    boxShadow:
+      "0 8px 18px color-mix(in srgb, var(--color-primary) 28%, transparent)",
   },
 
   secondary: {
     background:
-      "var(--color-surface-secondary)",
+      "var(--color-secondary)",
 
     color:
-      "var(--text-primary)",
+     "var(--color-quaternary)",
+
+    border:
+      "1px solid transparent",
+
+    boxShadow:
+      "0 6px 14px color-mix(in srgb, var(--color-secondary) 20%, transparent)",
   },
 
   glass: {
     background:
-      "rgba(255,255,255,0.04)",
-
-    border:
-      "1px solid rgba(255,255,255,0.08)",
+      "var(--color-background)",
 
     backdropFilter:
-      "blur(12px)",
+      "blur(14px)",
+
+    WebkitBackdropFilter:
+      "blur(14px)",
+
+    border:
+      "1px solid rgba(255,255,255,.18)",
 
     color:
-      "var(--text-primary)",
+      "var(--color-primary)",
+
+    boxShadow:
+      "0 8px 24px rgba(0,0,0,.10)",
   },
 
   success: {
     background:
-      "rgba(34,197,94,0.12)",
-
-    border:
-      "1px solid rgba(34,197,94,0.25)",
+      "color-mix(in srgb, var(--color-success) 14%, transparent)",
 
     color:
-      "rgb(34,197,94)",
+      "var(--color-success)",
+
+    border:
+      "1px solid color-mix(in srgb, var(--color-success) 30%, transparent)",
   },
 
   warning: {
     background:
-      "rgba(245,158,11,0.12)",
-
-    border:
-      "1px solid rgba(245,158,11,0.25)",
+      "color-mix(in srgb, var(--color-warning) 14%, transparent)",
 
     color:
-      "rgb(245,158,11)",
+      "var(--color-warning)",
+
+    border:
+      "1px solid color-mix(in srgb, var(--color-warning) 30%, transparent)",
   },
 
   danger: {
     background:
-      "rgba(239,68,68,0.12)",
-
-    border:
-      "1px solid rgba(239,68,68,0.25)",
+      "color-mix(in srgb, var(--color-danger) 14%, transparent)",
 
     color:
-      "rgb(239,68,68)",
+      "var(--color-danger)",
+
+    border:
+      "1px solid color-mix(in srgb, var(--color-danger) 30%, transparent)",
   },
 };

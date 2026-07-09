@@ -1,5 +1,9 @@
 "use client";
 
+import {
+  motion,
+} from "framer-motion";
+
 import Card
   from "@/components/ui/card";
 
@@ -12,6 +16,9 @@ import {
 
 import SocialsIcons
   from "./components/socials-icons";
+
+import SocialsContact
+  from "./components/socials-contact";
 
 import {
   socialsContent,
@@ -28,43 +35,62 @@ export default function Socials() {
     <Section
       spacing="none"
     >
-      <Card
-        variant="featured"
-        className="
-          p-6
-        "
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: 80,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{
+          duration: 0.7,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        viewport={{
+          once: false,
+        }}
       >
-        <div
+        <Card
+          variant="featured"
           className="
-            flex
-            flex-col
-            gap-4
+            p-6
           "
         >
           <div
             className="
               flex
               flex-col
-              gap-2
+              gap-4
             "
           >
-
-            <h3>
-              {content.title}
-            </h3>
-
-            <p
+            <div
               className="
-                text-text-muted
+                flex
+                flex-col
+                gap-2
               "
             >
-              {content.description}
-            </p>
-          </div>
+              <h3>
+                {content.title}
+              </h3>
 
-          <SocialsIcons />
-        </div>
-      </Card>
+              <p
+                className="
+                  text-text-muted
+                "
+              >
+                {content.description}
+              </p>
+            </div>
+
+            <SocialsIcons />
+
+            <SocialsContact />
+          </div>
+        </Card>
+      </motion.div>
     </Section>
   );
 }

@@ -5,7 +5,7 @@ import ContactForm
   from "@/components/modules/contact/sections/contact-form";
 
 import ContactEmail
-  from "@/components/modules/contact/sections/contact-email";
+  from "@/components/modules/contact/sections/contact-meeting";
 
 import Socials
   from "@/components/modules/contact/sections/socials";

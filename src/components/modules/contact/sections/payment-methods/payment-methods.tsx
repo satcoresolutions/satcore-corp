@@ -1,5 +1,9 @@
 "use client";
 
+import {
+  motion,
+} from "framer-motion";
+
 import Card
   from "@/components/ui/card";
 
@@ -42,75 +46,104 @@ export default function PaymentMethods() {
       id="payment-methods"
       spacing="none"
     >
-      <Card
-        variant="featured"
-        className="
-          flex
-          flex-col
-          gap-6
-          p-6
-        "
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: 80,
+          scale: 0.96,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+        }}
+        transition={{
+          duration: 0.8,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        viewport={{
+          once: false,
+        }}
       >
-        <div
+        <Card
+          variant="featured"
           className="
             flex
             flex-col
-            gap-2
+            gap-6
+            p-6
           "
         >
-          <h3>
-            {content.title}
-          </h3>
-
-          <p
+          <div
             className="
-              text-text-muted
+              flex
+              flex-col
+              gap-2
             "
           >
-            {content.description}
-          </p>
-        </div>
+            <h3>
+              {content.title}
+            </h3>
 
-        <div
-          className="
-            flex
-            flex-wrap
-            items-center
-            gap-4
-          "
-        >
-          {paymentMethods.map(
-            (method) =>
-              method.href ? (
-                <a
-                  key={method.key}
-                  href={method.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                    transition-transform
-                    hover:scale-105
-                  "
-                >
-                  <Icon
-                    src={method.icon}
-                    alt={method.key}
-                    size="xl"
-                    variant="brand"
-                  />
-                </a>
-              ) : (
-                <Icon
-                  key={method.key}
-                  src={method.icon}
-                  alt={method.key}
-                  size="xl"
-                  variant="brand"
-                />
-              )
-          )}
-        </div>
-      </Card>
+            <p
+              className="
+                text-text-muted
+              "
+            >
+              {content.description}
+            </p>
+          </div>
+
+          <div
+            className="
+              flex
+              flex-wrap
+              items-center
+              gap-4
+            "
+          >
+            {paymentMethods.map(
+              (method) =>
+                method.href ? (
+                  <motion.a
+                    key={method.key}
+                    href={method.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{
+                      scale: 1.1,
+                      y: -2,
+                    }}
+                    whileTap={{
+                      scale: 0.95,
+                    }}
+                  >
+                    <Icon
+                      src={method.icon}
+                      alt={method.key}
+                      size="xl"
+                      variant="brand"
+                    />
+                  </motion.a>
+                ) : (
+                  <motion.div
+                    key={method.key}
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <Icon
+                      src={method.icon}
+                      alt={method.key}
+                      size="xl"
+                      variant="brand"
+                    />
+                  </motion.div>
+                )
+            )}
+          </div>
+        </Card>
+      </motion.div>
     </Section>
   );
 }

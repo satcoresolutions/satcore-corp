@@ -1,0 +1,403 @@
+/*
+|------------------------------------------------
+| ARTICLE
+|------------------------------------------------
+*/
+
+.article {
+  /*
+  |------------------------------------------------
+  | TEXT
+  |------------------------------------------------
+  */
+
+  --article-text-color: var(--surface);
+  --article-paragraph-color: var(--text-primary);
+
+  /*
+  |------------------------------------------------
+  | HEADINGS
+  |------------------------------------------------
+  */
+
+  --article-h1-color: var(--primary);
+  --article-h2-color: var(--text-primary);
+  --article-h3-color: var(--surface);
+  --article-h4-color: var(--text-primary);
+  --article-h5-color: var(--text-primary);
+  --article-h6-color: var(--text-muted);
+
+  /*
+  |------------------------------------------------
+  | LINKS
+  |------------------------------------------------
+  */
+
+  --article-link-color: var(--primary);
+
+  /*
+  |------------------------------------------------
+  | LISTS
+  |------------------------------------------------
+  */
+
+  --article-marker-color: var(--primary);
+
+  /*
+  |------------------------------------------------
+  | BLOCKQUOTE
+  |------------------------------------------------
+  */
+
+  --article-blockquote-border: var(--primary);
+  --article-blockquote-bg: var(--surface-secondary);
+  --article-blockquote-color: var(--text-primary);
+
+  /*
+  |------------------------------------------------
+  | CODE
+  |------------------------------------------------
+  */
+
+  --article-code-color: var(--primary);
+  --article-code-bg: var(--surface-secondary);
+
+  /*
+  |------------------------------------------------
+  | GENERAL
+  |------------------------------------------------
+  */
+
+  color: var(--article-text-color);
+
+  font-family: var(--font-secondary);
+
+  font-size: var(--body-font-size);
+
+  font-weight: var(--body-font-weight);
+
+  line-height: var(--body-line-height);
+
+  letter-spacing: var(--body-letter-spacing);
+}
+
+/*
+|------------------------------------------------
+| HEADINGS
+|------------------------------------------------
+*/
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  font-family: var(--font-primary);
+
+  line-height: 1.2;
+}
+
+.article h1 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  color: var(--article-h1-color);
+
+  font-size: clamp(2.75rem, 5vw, 4rem);
+
+  text-align: center;
+}
+
+.article h2 {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+
+  color: var(--article-h2-color);
+
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.article h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+  color: var(--article-h3-color);
+
+  font-size: clamp(1.6rem, 3vw, 2rem);
+}
+
+.article h4 {
+  margin-top: 2.5rem;
+  margin-bottom: .75rem;
+
+  color: var(--article-h4-color);
+
+  font-size: 1.5rem;
+}
+
+.article h5 {
+  margin-top: 2rem;
+  margin-bottom: .75rem;
+
+  color: var(--article-h5-color);
+
+  font-size: 1.25rem;
+}
+
+.article h6 {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+
+  color: var(--article-h6-color);
+
+  font-size: 1rem;
+}
+
+/*
+|------------------------------------------------
+| PARAGRAPHS
+|------------------------------------------------
+*/
+
+.article p {
+  margin: 1rem 0;
+
+  color: var(--article-paragraph-color);
+
+  line-height: 1.9;
+}
+
+/*
+|------------------------------------------------
+| STRONG
+|------------------------------------------------
+*/
+
+.article strong {
+  color: var(--article-text-color);
+
+  font-weight: 700;
+}
+
+/*
+|------------------------------------------------
+| EMPHASIS
+|------------------------------------------------
+*/
+
+.article em {
+  color: var(--article-text-color);
+
+  font-style: italic;
+}
+
+/*
+|------------------------------------------------
+| LINKS
+|------------------------------------------------
+*/
+
+.article a {
+  color: var(--article-link-color);
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: opacity .2s;
+}
+
+.article a:hover {
+  opacity: .8;
+
+  text-decoration: underline;
+}
+
+/*
+|------------------------------------------------
+| LISTS
+|------------------------------------------------
+*/
+
+.article ul,
+.article ol {
+  margin: 2rem 0;
+
+  padding-left: 2rem;
+}
+
+.article li {
+  margin-bottom: .85rem;
+
+  color: var(--article-paragraph-color);
+
+  line-height: 1.8;
+}
+
+.article li::marker {
+  color: var(--article-marker-color);
+}
+
+/*
+|------------------------------------------------
+| BLOCKQUOTE
+|------------------------------------------------
+*/
+
+.article blockquote {
+  margin: 3rem 0;
+
+  padding: 1rem 1.5rem;
+
+  border-left: 4px solid var(--article-blockquote-border);
+
+  background: var(--article-blockquote-bg);
+
+  border-radius: var(--radius-card);
+
+  color: var(--article-blockquote-color);
+
+  font-style: italic;
+}
+
+/*
+|------------------------------------------------
+| IMAGES
+|------------------------------------------------
+*/
+
+.article img {
+  display: block;
+
+  width: 100%;
+
+  margin: 3rem auto;
+
+  border-radius: var(--radius-card);
+}
+
+/*
+|------------------------------------------------
+| HORIZONTAL RULE
+|------------------------------------------------
+*/
+
+.article hr {
+  margin: 2rem 0;
+
+  border: 0;
+
+  border-top: 1px solid var(--color-border);
+}
+
+/*
+|------------------------------------------------
+| TABLES
+|------------------------------------------------
+*/
+
+.article table {
+  width: 100%;
+
+  margin: 3rem 0;
+
+  border-collapse: collapse;
+}
+
+.article th,
+.article td {
+  padding: .9rem 1rem;
+
+  border: 1px solid var(--color-border);
+
+  text-align: left;
+}
+
+.article th {
+  background: var(--surface-secondary);
+
+  color: var(--article-text-color);
+}
+
+/*
+|------------------------------------------------
+| INLINE CODE
+|------------------------------------------------
+*/
+
+.article code {
+  padding: .15rem .4rem;
+
+  border-radius: var(--radius-badge);
+
+  background: var(--article-code-bg);
+
+  color: var(--article-code-color);
+
+  font-family: var(--font-mono);
+
+  font-size: .9em;
+}
+
+/*
+|------------------------------------------------
+| CODE BLOCKS
+|------------------------------------------------
+*/
+
+.article pre {
+  overflow-x: auto;
+
+  margin: 2rem 0;
+
+  padding: 1.5rem;
+
+  border-radius: var(--radius-card);
+
+  background: var(--surface-secondary);
+
+  border: 1px solid var(--color-border);
+}
+
+.article pre code {
+  padding: 0;
+
+  background: transparent;
+}
+
+/*
+|------------------------------------------------
+| SELECTION
+|------------------------------------------------
+*/
+
+.article ::selection {
+  background: var(--primary);
+
+  color: white;
+}
+
+.article-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  margin: 2rem 0;
+}
+
+.article-grid > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+}

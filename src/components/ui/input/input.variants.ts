@@ -7,7 +7,7 @@ export const inputVariants = {
       "1px solid var(--border)",
 
     color:
-      "var(--text-primary)",
+      "var(--text-secondary)",
   },
 
   filled: {
@@ -29,6 +29,6 @@ export const inputVariants = {
       "1px solid var(--border)",
 
     color:
-      "var(--text-primary)",
+      "var(--text-secondary)",
   },
 } as const;

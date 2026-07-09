@@ -1,7 +1,7 @@
 export const modalVariants = {
   default: {
     background:
-      "var(--surface)",
+      "var(--primary)",
 
     border:
       "1px solid var(--border)",
@@ -20,7 +20,7 @@ export const modalVariants = {
 
   glass: {
     background:
-      "color-mix(in srgb, var(--surface) 70%, transparent)",
+      "color-mix(in srgb, var(--background) 70%, transparent)",
 
     border:
       "1px solid var(--glass-border)",

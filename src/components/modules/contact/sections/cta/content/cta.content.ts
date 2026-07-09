@@ -1,37 +1,85 @@
 export const ctaContentContact = {
-  en: {
-    badge: "Handmade with love",
+en: {
+badge: "Let's build something exceptional",
 
-    title: "Discover unique handcrafted pieces",
+title:
+  "Ready to turn your idea into a scalable digital product?",
 
-    description:
-      "Explore artisan-made products crafted with care, tradition, and passion. Each piece tells a story.",
+description:
+  "From websites and custom platforms to business automation and AI-powered solutions, we help companies launch faster, operate smarter, and grow with confidence.",
 
-    microcopy:
-      "Limited pieces · 100% handmade originals",
-  },
+microcopy:
+  "Free consultation · Fast response · Tailored solutions",
 
-  es: {
-    badge: "Hecho a mano con amor",
+primaryAction: {
+  label: "Schedule a Meeting",
+},
 
-    title: "Descubre piezas artesanales únicas",
+secondaryAction: {
+  label: "Send a Message",
+},
 
-    description:
-      "Explora productos creados por artesanos con dedicación, tradición y pasión. Cada pieza cuenta una historia.",
+trustItems: [
+  "⚡ Response within 24 hours",
+  "🔒 Secure development practices",
+  "📈 Scalable business solutions",
+],
 
-    microcopy:
-      "Piezas limitadas · 100% hecho a mano",
-  },
+},
 
-  pt: {
-    badge: "Feito à mão com amor",
+es: {
+badge: "Construyamos algo excepcional",
 
-    title: "Descubra peças artesanais únicas",
+title:
+  "¿Listo para convertir tu idea en un producto digital escalable?",
 
-    description:
-      "Explore produtos artesanais feitos com cuidado, tradição e paixão. Cada peça conta uma história.",
+description:
+  "Desde sitios web y plataformas personalizadas hasta automatización empresarial y soluciones impulsadas por inteligencia artificial, ayudamos a las empresas a lanzar más rápido, operar mejor y crecer con confianza.",
 
-    microcopy:
-      "Peças limitadas · 100% feito à mão",
-  },
+microcopy:
+  "Asesoría gratuita · Respuesta rápida · Soluciones a medida",
+
+primaryAction: {
+  label: "Agendar reunión",
+},
+
+secondaryAction: {
+  label: "Enviar mensaje",
+},
+
+trustItems: [
+  "⚡ Respuesta en menos de 24 horas",
+  "🔒 Desarrollo seguro y confiable",
+  "📈 Soluciones escalables para tu negocio",
+],
+
+},
+
+pt: {
+badge: "Vamos construir algo excepcional",
+
+title:
+  "Pronto para transformar sua ideia em um produto digital escalável?",
+
+description:
+  "De sites e plataformas personalizadas até automação empresarial e soluções com inteligência artificial, ajudamos empresas a lançar mais rápido, operar melhor e crescer com confiança.",
+
+microcopy:
+  "Consultoria gratuita · Resposta rápida · Soluções sob medida",
+
+primaryAction: {
+  label: "Agendar reunião",
+},
+
+secondaryAction: {
+  label: "Enviar mensagem",
+},
+
+trustItems: [
+  "⚡ Resposta em menos de 24 horas",
+  "🔒 Desenvolvimento seguro e confiável",
+  "📈 Soluções escaláveis para o seu negócio",
+],
+
+},
 } as const;

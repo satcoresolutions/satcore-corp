@@ -4,15 +4,15 @@ export const buttonVariants = {
       "var(--color-primary)",
 
     color:
-      "var(--color-surface)",
+      "var(--color-accent)",
   },
 
   secondary: {
     background:
-      "var(--color-secondary)",
+      "var(--color-surface)",
 
     color:
-      "var(--color-primary)",
+      "var(--color-text-secondary)",
   },
 
   accent: {
@@ -20,7 +20,7 @@ export const buttonVariants = {
       "var(--color-accent)",
 
     color:
-      "var(--color-accent)",
+      "var(--color-text-primary)",
   },
 
   subtle: {
@@ -47,7 +47,7 @@ export const buttonVariants = {
       "var(--color-text-primary)",
 
     border:
-      "1px solid color-mix(in srgb, var(--color-text-muted) 18%, transparent)",
+      "1px solid color-mix(in srgb, var(--color-primary) 18%, transparent)",
   },
 
   glass: {
@@ -55,7 +55,7 @@ export const buttonVariants = {
       "color-mix(in srgb, var(--color-surface) 70%, transparent)",
 
     color:
-      "var(--color-text-primary)",
+      "var(--color-text-secondary)",
 
     border:
       "1px solid color-mix(in srgb, var(--color-text-primary) 8%, transparent)",
@@ -77,6 +77,6 @@ export const buttonVariants = {
     `,
 
     color:
-      "var(--color-quaternary)",
+      "var(--color-text-secondary)",
   },
 } as const;

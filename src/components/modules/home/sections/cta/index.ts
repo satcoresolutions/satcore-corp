@@ -1,2 +1,2 @@
 export { default }
-  from "./cta";
+  from "./CTA";

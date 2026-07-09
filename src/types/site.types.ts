@@ -56,13 +56,10 @@ export interface RepositoryConfig {
 */
 
 export interface SocialConfig {
-  github?:    string;
-  linkedin?:  string;
-  twitter?:   string;
   facebook?:  string;
   instagram?: string;
   youtube?:   string;
-  discord?:   string;
+  tiktok?:   string;
 }
 
 /*

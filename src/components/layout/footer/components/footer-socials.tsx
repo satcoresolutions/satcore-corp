@@ -6,7 +6,7 @@ import Section from "@/components/ui/section";
 import Icon from "@/components/ui/icon";
 import { socialsConfig } from "@/config/socials.config";
 import { footerContent } from "../content/footer.content";
-import { Events } from "@/integrations/google/analytics";
+import { pushEvent } from "@/integrations/google/analytics";
 import { useLanguage } from "@/hooks/use-language";
 
 const socials = Object.entries(socialsConfig).map(([key, value]) => ({
@@ -20,11 +20,11 @@ export default function FooterSocials() {
   const content = footerContent[lang];
 
   return (
-    <Section spacing="none" className="space-y-4">
+    <Section spacing="none" style={{ paddingTop: 10, paddingBottom: 0 }}>
       {/* TITLE */}
-      <h3 className="text-text-muted">
+      <h5 className="text-text-primary">
         {content.sections.socials.title}
-      </h3>
+      </h5>
 
       {/* SOCIALS */}
       <div className="flex items-center gap-2">
@@ -34,7 +34,14 @@ export default function FooterSocials() {
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => Events.socialClick(social.key)}
+            onClick={() =>
+              pushEvent({
+                event: "social_click",
+                social_platform: social.key,
+                page_path: window.location.pathname,
+                link_url: social.href,
+              })
+            }
             className="
               group
               inline-flex
@@ -43,7 +50,7 @@ export default function FooterSocials() {
               rounded-md
               p-2
               transition-all
-              hover:bg-surface
+              hover:bg-surface-secondary
               hover:scale-105
               active:scale-95
             "

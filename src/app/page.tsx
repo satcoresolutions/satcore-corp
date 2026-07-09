@@ -2,19 +2,27 @@ import Hero
   from "@/components/modules/home/sections/hero";
 
 import FeaturedProducts
-  from "@/components/modules/home/sections/featured-products";
+  from "@/components/modules/home/sections/featured-services";
 
-import Benefits
-  from "@/components/modules/home/sections/benefits";
+import WhySatCore
+  from "@/components/modules/home/sections/why-satcore";
 
-import Process
-  from "@/components/modules/home/sections/process";
+import UseCases
+  from "@/components/modules/home/sections/use-cases";
 
-import FAQ
-  from "@/components/modules/home/sections/faq";
+import Portfolio
+  from "@/components/modules/home/sections/portfolio";
+
+import Testimonials from "@/components/modules/home/sections/testimonials";
 
 import CTA
   from "@/components/modules/home/sections/cta";
+
+import Section
+  from "@/components/ui/section";
+
+import Container
+  from "@/components/ui/container";
 
 export default function HomePage() {
   return (
@@ -23,11 +31,27 @@ export default function HomePage() {
 
       <FeaturedProducts />
 
-      <Benefits />
+      <Section variant="surface">
+        <Container>
+          <div
+            className="
+              grid
+              items-center
+              gap-16
 
-      <Process />
+              md:grid-cols-[1fr_2.5fr]
+            "
+          >
+            <WhySatCore />
 
-      <FAQ />
+            <UseCases />
+          </div>
+        </Container>
+      </Section>
+
+      <Portfolio />
+
+      <Testimonials/>
 
       <CTA />
     </main>

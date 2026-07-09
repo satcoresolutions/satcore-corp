@@ -12,13 +12,13 @@ export default function FooterBrand() {
   const content = companyContent[lang];
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 text-center">
       {/* LOGO */}
       <div className="flex items-center gap-3">
         <Icon
           src={assetsConfig.logoSecondary}
           alt={companyConfig.name}
-          size="lg"
+          size="2xl"
           variant="brand"
         />
 
@@ -28,7 +28,7 @@ export default function FooterBrand() {
       </div>
 
       {/* DESCRIPTION (i18n) */}
-      <p className="text-text-secondary">
+      <p className="text-text-primary">
         {content.description}
       </p>
     </div>

@@ -5,42 +5,68 @@ import NavbarNavigation from "./components/navbar-navigation";
 import NavbarActions from "./components/navbar-actions";
 import ThemeModeToggle from "./components/theme-mode-toggle";
 import NavbarMobile from "./components/navbar-mobile";
-import LanguageSwitcher
-  from "./components/navbar-lenguage";
+import LanguageSwitcher from "./components/navbar-lenguage";
 
 export default function Navbar() {
   return (
     <header
       className="
         fixed
-        w-full
-        top-0
-        z-50
-        border-b
-        backdrop-blur-md
+        inset-x-0
+        top-4
+        z-100
+        px-4
       "
-      style={{
-        background:
-          "color-mix(in srgb, var(--background) 88%, transparent)",
-        borderColor:
-          "var(--glass-border)",
-      }}
     >
       <Container>
         <div
           className="
+            relative
             flex
             h-16
             items-center
             justify-between
+            overflow-visible
+            rounded-2xl
+            border
+            px-6
+            backdrop-blur-xl
           "
+          style={{
+            background:
+              "color-mix(in srgb, var(--background) 82%, transparent)",
+            borderColor:
+              "color-mix(in srgb, var(--surface) 10%, transparent)",
+            boxShadow:
+              "0 12px 40px rgb(0 0 0 / 0.12)",
+          }}
         >
-          <NavbarBrand />
+          {/* Brillo superior */}
+          <div
+            className="
+              pointer-events-none
+              absolute
+              inset-0
+              bg-linear-to-b
+              from-white/10
+              via-transparent
+              to-transparent
+              rounded-2xl
+            "
+          />
 
-          <NavbarNavigation />
+          <div className="relative z-10">
+            <NavbarBrand />
+          </div>
+
+          <div className="relative z-10">
+            <NavbarNavigation />
+          </div>
 
           <div
             className="
+              relative
+              z-10
               hidden
               items-center
               gap-3
@@ -51,10 +77,12 @@ export default function Navbar() {
 
             <ThemeModeToggle />
 
-             <LanguageSwitcher />
+            <LanguageSwitcher />
           </div>
 
-          <NavbarMobile />
+          <div className="relative z-10 lg:hidden">
+            <NavbarMobile />
+          </div>
         </div>
       </Container>
     </header>

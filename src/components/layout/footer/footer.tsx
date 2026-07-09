@@ -12,29 +12,25 @@ import FooterBottom from "./components/footer-bottom";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-surface-secondary py-20">
-      <Container>
+    <footer className="border-t border-primary p-5">
         <div
           className="
-            grid
-            gap-12
-            md:grid-cols-2
-            lg:grid-cols-5
-          "
+          pb-5
+        grid
+        gap-8
+        md:grid-cols-2
+        lg:grid-cols-4
+      "
         >
-          {/* LEFT COLUMN */}
-          <div className="lg:col-span-2 space-y-10">
-            <FooterBrand />
+          <FooterBrand />
+
+          <div className="space-y-2">
+            <FooterNavigation />
             <FooterLegal />
           </div>
 
-          {/* NAVIGATION */}
-          <FooterNavigation />
-
-          {/* MAP */}
           <FooterMap />
 
-          {/* CONTACT + SOCIALS */}
           <div className="space-y-8">
             <FooterContact />
             <FooterSocials />
@@ -42,7 +38,7 @@ export default function Footer() {
         </div>
 
         <FooterBottom />
-      </Container>
+  
     </footer>
   );
 }

@@ -1,10 +1,30 @@
-import type { SiteConfig } from "@/types/site.types";
+export const siteConfig = {
+  name: "SatCore Solutions",
 
-export const siteConfig: SiteConfig = {
-  name:            "company one",
-  slug:            "company-one",
-  url:             "https://satcore.solutions/",
-  email:           "https://satcore.solutions/",
-  locale:          "es-CO",
-  timezone:        "America/Bogota",
+  slug: "satcore-solutions",
+
+  url: "https://www.satcore.solutions",
+
+  email: "satcoresolutions@gmail.com",
+
+  locale: "es-CO",
+
+  ogLocale: "es_CO",
+
+  timezone: "America/Bogota",
+
+  keywords: [
+    "desarrollo web",
+    "software a medida",
+    "automatización empresarial",
+    "IA para negocios",
+    "ciberseguridad",
+    "plantillas web",
+    "templates nextjs",
+    "componentes react",
+    "scaffolds empresariales",
+    "productos digitales",
+    "desarrollo de software",
+    "agencia digital",
+  ],
 };

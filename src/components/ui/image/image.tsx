@@ -1,5 +1,4 @@
-import NextImage
-  from "next/image";
+import NextImage from "next/image";
 
 import type {
   ImageProps,
@@ -34,9 +33,6 @@ export default function Image({
       priority={priority}
       className={className}
       style={{
-        width: "100%",
-        height: "auto",
-
         ...imageVariants[
           variant
         ],

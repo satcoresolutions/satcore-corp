@@ -1,48 +1,82 @@
-import type { HeroContent } from "../types/hero.types";
-
 export const heroContent = {
   en: {
-    badge: "Professional Web Development",
+    badge: "Contact SatCore",
 
-    title: "Your business deserves a digital presence that converts.",
+    title:
+      "Let's discuss your next digital project.",
 
     description:
-      "We create optimized landing pages to capture leads, validate ideas, and launch campaigns. Fast, elegant, and results-driven.",
+      "Whether you're planning a new platform, modernizing an existing system, or exploring artificial intelligence, our team is ready to help you build scalable and impactful solutions.",
 
     features: [
-      "Fast delivery",
-      "Responsive design",
-      "Support included",
+      "Free Consultation",
+      "Custom Solutions",
+      "Fast Response",
     ],
+
+    primaryAction: {
+      label: "Send a Message",
+      href: "#contact",
+    },
+
+    secondaryAction: {
+      label: "Explore Services",
+      href: "/services",
+    },
   },
 
   es: {
-    badge: "Desarrollo Web Profesional",
+    badge: "Contáctanos",
 
-    title: "Tu negocio merece una presencia digital que convierta.",
+    title:
+      "Hablemos sobre tu próximo proyecto digital.",
 
     description:
-      "Creamos landing pages optimizadas para captar leads, validar ideas y lanzar campañas. Rápido, elegante y enfocado en resultados.",
+      "Ya sea que necesites desarrollar una nueva plataforma, modernizar un sistema existente o implementar inteligencia artificial, nuestro equipo está listo para ayudarte a crear soluciones escalables y de alto impacto.",
 
     features: [
-      "Entrega rápida",
-      "Diseño responsive",
-      "Soporte incluido",
+      "Consultoría Gratuita",
+      "Soluciones a la Medida",
+      "Respuesta Rápida",
     ],
+
+    primaryAction: {
+      label: "Enviar Mensaje",
+      href: "#contact",
+    },
+
+    secondaryAction: {
+      label: "Explorar Servicios",
+      href: "/services",
+    },
   },
 
   pt: {
-    badge: "Desenvolvimento Web Profissional",
+    badge: "Fale Conosco",
 
-    title: "Seu negócio merece uma presença digital que converte.",
+    title:
+      "Vamos conversar sobre o seu próximo projeto digital.",
 
     description:
-      "Criamos landing pages otimizadas para captar leads, validar ideias e lançar campanhas. Rápido, elegante e focado em resultados.",
+      "Se você deseja desenvolver uma nova plataforma, modernizar um sistema existente ou implementar inteligência artificial, nossa equipe está pronta para criar soluções escaláveis e de alto impacto.",
 
     features: [
-      "Entrega rápida",
-      "Design responsivo",
-      "Suporte incluído",
+      "Consultoria Gratuita",
+      "Soluções Sob Medida",
+      "Resposta Rápida",
     ],
+
+    primaryAction: {
+      label: "Enviar Mensagem",
+      href: "#contact",
+    },
+
+    secondaryAction: {
+      label: "Explorar Serviços",
+      href: "/services",
+    },
   },
-} as const satisfies Record<string, HeroContent>;
+} as const;
+
+export type HeroContent = typeof heroContent;
+export type HeroLanguage = keyof HeroContent;

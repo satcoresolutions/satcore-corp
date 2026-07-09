@@ -1,51 +1,82 @@
-import type { HeroContent } from "../types/hero.types";
-
 export const heroContent = {
-en: {
-badge: "Handcrafted Creations",
+  en: {
+    badge: "Digital Innovation",
 
-title: "Unique handmade pieces inspired by nature and tradition.",
+    title:
+      "Building the next generation of digital solutions.",
 
-description:
-  "Discover a curated collection of artisan products, natural stones, jewelry, and handcrafted creations made with dedication and attention to detail.",
+    description:
+      "At SatCore, we help businesses innovate through custom software, artificial intelligence, cloud technologies, and digital transformation. We create scalable solutions that drive growth, efficiency, and long-term success.",
 
-features: [
-  "Handmade products",
-  "Unique collections",
-  "Natural materials",
-],
+    features: [
+      "Custom Software",
+      "Artificial Intelligence",
+      "Cloud Solutions",
+    ],
 
-},
+    primaryAction: {
+      label: "Explore Services",
+      href: "/services",
+    },
 
-es: {
-badge: "Creaciones Artesanales",
+    secondaryAction: {
+      label: "Contact Us",
+      href: "/contact",
+    },
+  },
 
-title: "Piezas únicas hechas a mano inspiradas en la naturaleza y la tradición.",
+  es: {
+    badge: "Innovación Digital",
 
-description:
-  "Descubre una colección de productos artesanales, piedras naturales, joyería y creaciones elaboradas con dedicación, cuidado y atención al detalle.",
+    title:
+      "Construimos la próxima generación de soluciones digitales.",
 
-features: [
-  "Productos artesanales",
-  "Colecciones únicas",
-  "Materiales naturales",
-],
+    description:
+      "En SatCore ayudamos a las empresas a innovar mediante software a la medida, inteligencia artificial, tecnologías en la nube y transformación digital. Creamos soluciones escalables que impulsan el crecimiento, la eficiencia y el éxito a largo plazo.",
 
-},
+    features: [
+      "Software a la Medida",
+      "Inteligencia Artificial",
+      "Soluciones en la Nube",
+    ],
 
-pt: {
-badge: "Criações Artesanais",
+    primaryAction: {
+      label: "Explorar Servicios",
+      href: "/services",
+    },
 
-title: "Peças únicas feitas à mão inspiradas na natureza e na tradição.",
+    secondaryAction: {
+      label: "Contáctanos",
+      href: "/contact",
+    },
+  },
 
-description:
-  "Descubra uma coleção de produtos artesanais, pedras naturais, joias e criações feitas com dedicação, cuidado e atenção aos detalhes.",
+  pt: {
+    badge: "Inovação Digital",
 
-features: [
-  "Produtos artesanais",
-  "Coleções exclusivas",
-  "Materiais naturais",
-],
+    title:
+      "Construindo a próxima geração de soluções digitais.",
 
-},
-} as const satisfies Record<string, HeroContent>;
+    description:
+      "Na SatCore, ajudamos empresas a inovar por meio de software sob medida, inteligência artificial, tecnologias em nuvem e transformação digital. Criamos soluções escaláveis que impulsionam o crescimento, a eficiência e o sucesso de longo prazo.",
+
+    features: [
+      "Software Sob Medida",
+      "Inteligência Artificial",
+      "Soluções em Nuvem",
+    ],
+
+    primaryAction: {
+      label: "Explorar Serviços",
+      href: "/services",
+    },
+
+    secondaryAction: {
+      label: "Fale Conosco",
+      href: "/contact",
+    },
+  },
+} as const;
+
+export type HeroContent = typeof heroContent;
+export type HeroLanguage = keyof HeroContent;

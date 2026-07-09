@@ -8,49 +8,55 @@ const { description } = siteContent["es"];
 
 export const baseMetadata: Metadata = {
   metadataBase: new URL(
-    siteConfig.url.startsWith("http")
-      ? siteConfig.url
-      : "http://localhost:3000"
+    siteConfig.url,
   ),
 
   title: {
-    default:  siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
+    default: siteConfig.name,
+
+    template:
+      `%s | ${siteConfig.name}`,
   },
 
   description,
 
-  keywords: [
-    "desarrollo web",
-    "landing page",
-    "Next.js",
-    "SatCore Solutions",
+  keywords:
+    siteConfig.keywords,
+
+  authors: [
+    {
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
   ],
 
-  authors:   [{ name: siteConfig.name, url: siteConfig.url }],
-  creator:   siteConfig.name,
-  publisher: siteConfig.name,
+  creator:
+    siteConfig.name,
+
+  publisher:
+    siteConfig.name,
+
+  alternates: {
+    canonical: "/",
+  },
 
   robots: {
-    index:  true,
+    index: true,
     follow: true,
+
     googleBot: {
-      index:  true,
+      index: true,
       follow: true,
-      "max-image-preview": "large",
+      "max-image-preview":
+        "large",
     },
   },
 
   icons: {
-    icon:  assetsConfig.favicon,
-    apple: assetsConfig.appleTouch,
-  },
+    icon:
+      assetsConfig.favicon,
 
-  openGraph: {
-    images: assetsConfig.ogImage,
-  },
-
-  twitter: {
-    images: assetsConfig.twitterCard,
+    apple:
+      assetsConfig.appleTouch,
   },
 };

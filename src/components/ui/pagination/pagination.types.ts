@@ -6,7 +6,8 @@ export type PaginationVariant =
   | "default"
   | "outlined"
   | "subtle"
-  | "floating";
+  | "floating"
+  | "glass";
 
 export interface PaginationProps
   extends HTMLAttributes<HTMLElement> {

@@ -17,12 +17,12 @@ export const sectionVariants: Record<
 
   surface: {
     background:
-      "var(--color-surface)",
+      "var(--color-surface-secondary)",
   },
 
   muted: {
     background:
-      "var(--color-surface-secondary)",
+      "var(--color-surface)",
   },
 
   glass: {

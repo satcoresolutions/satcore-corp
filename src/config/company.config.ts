@@ -1,13 +1,17 @@
-import type { CompanyConfig } from "@/types/site.types";
+export const companyConfig = {
+  name: "SatCore Solutions",
 
-export const companyConfig: CompanyConfig = {
-  name:         "SatCore",
-  email:        "https://satcore.solutions/",
-  whatsapp:     "3022016072",
-  website:      "https://satcore.solutions/",
-  organization: "satcore",
+  organization: "SatCore Solutions",
+
+  email: "satcoresolutions@gmail.com",
+
+  whatsapp: "573022016072",
+
+  website: "https://www.satcore.solutions",
+
   address: {
-    label: "Cl. 93 #12-28, Chapinero, Bogotá, Colombia",
-    query: "Cl 93 12-28 Chapinero Bogotá",
+    label: "Sudamérica",
+
+    query: "Sudamérica",
   },
 };

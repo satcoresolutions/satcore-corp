@@ -1,7 +1,7 @@
 export const navLinkVariants = {
   default: {
     color:
-      "var(--text-secondary)",
+      "var(--text-primary)",
   },
 
   active: {

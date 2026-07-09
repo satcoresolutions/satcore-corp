@@ -1,30 +1,36 @@
+// config/cta-content.ts
+
+/**
+ * CTA content GLOBAL — solo para elementos que:
+ * 1. Existen una única vez en todo el sitio (navbar, footer), o
+ * 2. Se repiten en múltiples instancias con el MISMO texto siempre (service cards).
+ *
+ * ⚠️ NO metas aquí el CTA de un Hero o Section específico de una página:
+ * cada página tiene su propio texto y debe vivir en su propio content file
+ * (ej. services-hero.content.ts, products-hero.content.ts).
+ */
 export const ctaContent = {
   en: {
     navbar: {
       label: "Contact",
     },
 
-    hero: {
-      primaryAction: {
-        label: "Shop Now",
-      },
-
-      secondaryAction: {
-        label: "Explore Collection",
-      },
-    },
-
     footer: {
-      label: "Contact Us",
+      label: "Let's Talk",
     },
 
-    section: {
+    service: {
       primaryAction: {
-        label: "view most",
+        label: "Get a Quote",
       },
 
       secondaryAction: {
-        label: "View Products",
+        label: "Hire via WhatsApp",
+      },
+
+      whatsapp: {
+        message:
+          "Hello! I'm interested in hiring the {service} service. I'd like to get started with the process.",
       },
     },
   },
@@ -34,27 +40,22 @@ export const ctaContent = {
       label: "Contacto",
     },
 
-    hero: {
-      primaryAction: {
-        label: "Explorar colección",
-      },
-
-      secondaryAction: {
-        label: "Ver más",
-      },
-    },
-
     footer: {
-      label: "Contáctanos",
+      label: "Hablemos",
     },
 
-    section: {
+    service: {
       primaryAction: {
-        label: "Contáctanos",
+        label: "Solicitar Cotización",
       },
 
       secondaryAction: {
-        label: "Ver productos",
+        label: "Contratar por WhatsApp",
+      },
+
+      whatsapp: {
+        message:
+          "¡Hola! Estoy interesado en contratar el servicio de {service}. Me gustaría iniciar el proceso.",
       },
     },
   },
@@ -64,28 +65,26 @@ export const ctaContent = {
       label: "Contato",
     },
 
-    hero: {
-      primaryAction: {
-        label: "Comprar agora",
-      },
-
-      secondaryAction: {
-        label: "Explorar coleção",
-      },
-    },
-
     footer: {
-      label: "Fale conosco",
+      label: "Vamos Conversar",
     },
 
-    section: {
+    service: {
       primaryAction: {
-        label: "Comprar agora",
+        label: "Solicitar Orçamento",
       },
 
       secondaryAction: {
-        label: "Ver produtos",
+        label: "Contratar pelo WhatsApp",
+      },
+
+      whatsapp: {
+        message:
+          "Olá! Tenho interesse em contratar o serviço de {service}. Gostaria de iniciar o processo.",
       },
     },
   },
 } as const;
+
+export type CtaContent = typeof ctaContent;
+export type CtaLanguage = keyof CtaContent;

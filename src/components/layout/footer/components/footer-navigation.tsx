@@ -12,11 +12,11 @@ export default function FooterNavigation() {
   const t = navigationContent[lang];
 
   return (
-    <Section spacing="none" className="space-y-4">
+    <Section spacing="none" style={{ paddingTop: 0, paddingBottom: 0 }}>
       {/* TITLE */}
-      <h3 className="text-text-muted">
-        {t.contact}
-      </h3>
+      <h5>
+        {t.navigation}
+      </h5>
 
       {/* LINKS */}
       <div className="flex flex-col gap-2">

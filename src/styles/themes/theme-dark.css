@@ -6,19 +6,19 @@
    */
 
   --primary:
-    #D4AF37;
+    #1BFF3C;
 
   --secondary:
-    #C8A96A;
+    #F6F9FC;
 
   --accent:
-    #F5E6C8;
+    #132A8E;
 
   --tertiary:
-    #B08D57;
+    #0A2540;
 
   --quaternary:
-    #6B4226;
+    #1F2937;
 
   /*
    |------------------------------------------------
@@ -27,14 +27,13 @@
    */
 
   --background:
-    #0F0C0A;
+    #0A0A0A;
 
   --surface:
-    #191411;
+    #a5aae9;
 
   --surface-secondary:
-    #241C17;
-
+    #4f4f4f;
   /*
    |------------------------------------------------
    | TYPOGRAPHY COLORS
@@ -42,13 +41,13 @@
    */
 
   --text-primary:
-    #FFF8E7;
+    #FFFFFF;
 
   --text-secondary:
-    #E6D3A3;
+    #000000;
 
   --text-muted:
-    #BFA46F;
+    #878787;
 
   /*
    |------------------------------------------------
@@ -56,18 +55,17 @@
    |------------------------------------------------
    */
 
-  --success:
+ --success:
     #22C55E;
 
   --warning:
-    #F59E0B;
+    #FFD93D;
 
   --danger:
-    #EF4444;
+    #FF6B6B;
 
   --info:
     #3B82F6;
-
   /*
    |------------------------------------------------
    | BUTTON COLORS
@@ -84,7 +82,7 @@
    */
 
   --font-primary:
-    Inter;
+    Orbitron;
 
   --font-secondary:
     Roboto;
@@ -135,16 +133,16 @@
    */
 
   --h3-font-size:
-    {{H3_FONT_SIZE}};
+    18px;
 
   --h3-line-height:
-    {{H3_LINE_HEIGHT}};
+    28px;
 
   --h3-font-weight:
-    {{H3_FONT_WEIGHT}};
+    700;
 
   --h3-letter-spacing:
-    {{H3_LETTER_SPACING}};
+    0.5px;
 
   /*
    |------------------------------------------------
@@ -153,16 +151,16 @@
    */
 
   --h4-font-size:
-    {{H4_FONT_SIZE}};
+    18px;
 
   --h4-line-height:
-    {{H4_LINE_HEIGHT}};
+    28px;
 
   --h4-font-weight:
-    {{H4_FONT_WEIGHT}};
+    700;
 
   --h4-letter-spacing:
-    {{H4_LETTER_SPACING}};
+    0.5px;
 
   /*
    |------------------------------------------------
@@ -171,16 +169,16 @@
    */
 
   --h5-font-size:
-    {{H5_FONT_SIZE}};
+    18px;
 
   --h5-line-height:
-    {{H5_LINE_HEIGHT}};
+    28px;
 
   --h5-font-weight:
-    {{H5_FONT_WEIGHT}};
+    700;
 
   --h5-letter-spacing:
-    {{H5_LETTER_SPACING}};
+    0.5px;
 
   /*
    |------------------------------------------------

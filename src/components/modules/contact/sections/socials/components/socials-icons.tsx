@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 
-import Icon
-  from "@/components/ui/icon";
+import {
+  motion,
+} from "framer-motion";
+
+import Icon from "@/components/ui/icon";
 
 import {
   socialsConfig,
@@ -17,31 +20,74 @@ const socials = Object.entries(
   icon: value.icon,
 }));
 
+const container = {
+  hidden: {},
+
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 15,
+    scale: 0.9,
+  },
+
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+
+    transition: {
+      duration: 0.4,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
 export default function SocialsIcons() {
   return (
-    <div
+    <motion.div
       className="
         flex
         flex-wrap
         items-center
         gap-3
       "
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      viewport={{
+        once: true,
+      }}
     >
       {socials.map((social) => (
-        <Link
+        <motion.div
           key={social.key}
-          href={social.href}
-          target="_blank"
-          rel="noopener noreferrer"
+          whileHover={{
+            y: -4,
+            scale: 1.1,
+          }}
         >
-          <Icon
-            src={social.icon}
-            alt={social.key}
-            size="md"
-            variant="social"
-          />
-        </Link>
+          <Link
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={social.key}
+          >
+            <Icon
+              src={social.icon}
+              alt={social.key}
+              size="md"
+              variant="social"
+            />
+          </Link>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }

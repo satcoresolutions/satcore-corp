@@ -1,4 +1,5 @@
 import type {
+  ButtonHTMLAttributes,
   ReactNode,
 } from "react";
 
@@ -12,16 +13,21 @@ export type ButtonVariant =
   | "glass"
   | "gradient";
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
 
   href?: string;
 
   variant?: ButtonVariant;
 
-  className?: string;
+  target?:
+    | "_self"
+    | "_blank"
+    | "_parent"
+    | "_top";
 
-  disabled?: boolean;
+  rel?: string;
 
-  onClick?: () => void;
+  ariaLabel?: string;
 }

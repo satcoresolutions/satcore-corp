@@ -1,3 +1,13 @@
+import type {
+  ContactValidationMessages,
+} from "../schemas/contact.schema";
+
+export interface FormFields {
+  name: string;
+  email: string;
+  message: string;
+}
+
 export interface FormContent {
   badge: string;
 
@@ -5,19 +15,13 @@ export interface FormContent {
 
   description: string;
 
-  name: string;
-
-  email: string;
-
-  message: string;
+  fields: FormFields;
 
   submit: string;
+
+  validation: ContactValidationMessages;
 }
 
-export interface FormTranslations {
-  en: FormContent;
-
-  es: FormContent;
-
-  pt: FormContent;
+export interface FormFieldsProps {
+  content: FormContent;
 }

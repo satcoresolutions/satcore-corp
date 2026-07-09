@@ -11,14 +11,13 @@ export default function FooterBottom() {
   return (
     <div
       className="
-        mt-16
         border-t
         border-surface-secondary
         pt-8
 
         text-center
         text-sm
-        text-text-muted
+        text-primary
       "
     >
       © {new Date().getFullYear()}{" "}

@@ -1,85 +1,116 @@
 "use client";
 
-import {
-  useLanguage,
-} from "@/hooks/use-language";
+import { motion } from "framer-motion";
 
-import {
-  formContent,
-} from "../content/form.content";
+import Card from "@/components/ui/card";
 
-import FormFields
-  from "./form-fields";
+import { useLanguage } from "@/hooks/use-language";
 
-import FormSubmit
-  from "./form-submit";
+import { formContent } from "../content/form.content";
+
+import FormFields from "./form-fields";
+import FormSubmit from "./form-submit";
+
+import { useContactSubmit } from "../hooks/use-contact-submit";
 
 export default function FormContent() {
-  const lang =
-    useLanguage();
+  const lang = useLanguage();
 
   const content =
     formContent[lang];
 
+  const {
+    handleSubmit,
+    loading,
+  } = useContactSubmit(
+    content.validation,
+  );
+
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+        x: -100,
+        scale: 0.96,
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        scale: 1,
+      }}
+      transition={{
+        duration: 0.8,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+      viewport={{
+        once: false,
+      }}
       className="
-        mx-auto
-        max-w-2xl
-      "
+    mx-auto
+    max-w-2xl
+  "
     >
-      <div
+      <Card
+        variant="glass"
         className="
-          flex
-          flex-col
-          gap-4
-          text-center
-          mb-10
+          p-8
+          md:p-10
         "
       >
-        <span
+        {/* HEADER */}
+        <div
           className="
-            text-sm
-            uppercase
-            tracking-widest
+            mb-10
+            flex
+            flex-col
+            gap-4
+            text-center
           "
-          style={{
-            color:
-              "var(--accent)",
-          }}
         >
-          {content.badge}
-        </span>
+          <span
+            className="
+              text-sm
+              uppercase
+              tracking-widest
+              text-primary
+            "
 
-        <h2>
-          {content.title}
-        </h2>
+          >
+            {content.badge}
+          </span>
 
-        <p
-          style={{
-            color:
-              "var(--color-text-muted)",
-          }}
+          <h2>
+            {content.title}
+          </h2>
+
+          <p
+            className="text-surface"
+          >
+            {content.description}
+          </p>
+        </div>
+
+        {/* FORM */}
+        <form
+          onSubmit={handleSubmit}
+          className="
+            flex
+            flex-col
+            gap-4
+          "
         >
-          {content.description}
-        </p>
-      </div>
+          <FormFields
+            content={content}
+          />
 
-      <form
-        className="
-          flex
-          flex-col
-          gap-4
-        "
-      >
-        <FormFields
-          content={content}
-        />
-
-        <FormSubmit
-          label={content.submit}
-        />
-      </form>
-    </div>
+          <FormSubmit
+            label={
+              content.submit
+            }
+            loading={loading}
+          />
+        </form>
+      </Card>
+    </motion.div>
   );
 }

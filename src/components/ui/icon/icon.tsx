@@ -1,7 +1,13 @@
 import Image from "next/image";
 
-import type { IconProps } from "./icon.types";
-import { iconSizes, iconVariants } from "./icon.variants";
+import type {
+  IconProps,
+} from "./icon.types";
+
+import {
+  iconSizes,
+  iconVariants,
+} from "./icon.variants";
 
 export default function Icon({
   src,
@@ -17,8 +23,11 @@ export default function Icon({
       ? size
       : iconSizes[size];
 
-  const variantStyle = iconVariants[variant];
-  const isBrand = variant === "brand";
+  const variantClass =
+    iconVariants[variant];
+
+  const isBrand =
+    variant === "brand";
 
   return (
     <Image
@@ -28,13 +37,20 @@ export default function Icon({
       height={resolvedSize}
       priority={priority}
       style={{
-        width: isBrand ? "auto" : resolvedSize,
+        width: isBrand
+          ? "auto"
+          : resolvedSize,
+
         height: resolvedSize,
+
         flexShrink: 0,
-        ...variantStyle,
+
         ...style,
       }}
-      className={className}
+      className={`
+        ${variantClass}
+        ${className}
+      `}
     />
   );
 }

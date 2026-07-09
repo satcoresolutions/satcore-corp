@@ -1,25 +1,22 @@
+import Button from "@/components/ui/button";
+
 interface FormSubmitProps {
   label: string;
+  loading: boolean;
 }
 
 export default function FormSubmit({
   label,
+  loading,
 }: FormSubmitProps) {
   return (
-    <button
+    <Button
       type="submit"
-      className="
-        rounded-xl
-        px-5
-        py-3
-        font-medium
-      "
-      style={{
-        background:
-          "var(--accent)",
-      }}
+      disabled={loading}
     >
-      {label}
-    </button>
+      {loading
+        ? "Sending..."
+        : label}
+    </Button>
   );
 }

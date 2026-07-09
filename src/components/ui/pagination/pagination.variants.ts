@@ -5,57 +5,44 @@ export const paginationVariants = {
 
   outlined: {
     background: "transparent",
+
     border:
-      "1px solid color-mix(in srgb, var(--color-text-muted) 15%, transparent)",
+      "1px solid color-mix(in srgb, var(--color-primary) 50%, transparent)",
   },
 
   subtle: {
     background:
-      "color-mix(in srgb, var(--color-surface) 94%, var(--color-background))",
+      "color-mix(in srgb, var(--color-surface) 96%, var(--color-background))",
+
+    border:
+      "1px solid color-mix(in srgb, var(--color-text-muted) 8%, transparent)",
   },
 
   floating: {
-    background: "var(--color-surface)",
+    background:
+      "color-mix(in srgb, var(--color-surface) 92%, transparent)",
+
+    backdropFilter: "blur(18px)",
+
+    border:
+      "1px solid color-mix(in srgb, white 12%, transparent)",
+
     boxShadow: `
-      0 4px 12px rgba(0,0,0,.04),
-      0 16px 40px rgba(0,0,0,.08)
+      0 8px 24px rgba(0,0,0,.06),
+      0 20px 48px rgba(0,0,0,.08)
     `,
   },
+
+  glass: {
+    background:
+      "color-mix(in srgb, var(--color-surface) 82%, transparent)",
+
+    backdropFilter: "blur(20px)",
+
+    border:
+      "1px solid color-mix(in srgb, white 14%, transparent)",
+
+    boxShadow:
+      "0 12px 32px rgba(0,0,0,.08)",
+  },
 } as const;
-
-export const paginationButtonStyles = {
-  base: `
-    min-width: 36px;
-    height: 36px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: var(--radius-badge);
-
-    font-size: 14px;
-
-    transition: all 0.2s ease;
-  `,
-
-  default: `
-    background: transparent;
-    color: var(--color-text-muted);
-  `,
-
-  active: `
-    background: var(--color-primary);
-    color: white;
-  `,
-
-  hover: `
-    &:hover {
-      background: color-mix(
-        in srgb,
-        var(--color-primary) 10%,
-        transparent
-      );
-    }
-  `,
-};
