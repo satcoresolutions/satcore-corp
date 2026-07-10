@@ -1,7 +1,7 @@
 "use client";
 
 import ServicesHero
-  from "@/components/modules/services/sections/hero/ServicesHero";
+  from "@/components/modules/services/sections/hero/hero";
 
 import Services
   from "@/components/modules/services/sections/services";
