@@ -10,7 +10,13 @@ import { useLanguage } from "@/hooks/use-language";
 
 import { pushEvent } from "@/integrations/google/analytics";
 
-export default function NavbarMobileNavigation() {
+interface Props {
+  onNavigate?: () => void;
+}
+
+export default function NavbarMobileNavigation({
+  onNavigate,
+}: Props) {
   const lang = useLanguage();
 
   const t = navigationContent[lang];
@@ -21,15 +27,17 @@ export default function NavbarMobileNavigation() {
         <Link
           key={link.href}
           href={link.href}
-          onClick={() =>
+          onClick={() => {
+            onNavigate?.();
+
             pushEvent({
               event: "cta_click",
               cta_type: "navigation",
               cta_label: link.key,
               section: "mobile_nav",
               page_path: window.location.pathname,
-            })
-          }
+            });
+          }}
           className="
             text-sm
             font-medium

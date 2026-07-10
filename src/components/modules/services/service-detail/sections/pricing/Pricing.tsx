@@ -79,7 +79,6 @@ export default function Pricing({
     <Section
       id="service-pricing"
       variant="transparent"
-      className="p-20"
     >
       <Container>
         <PricingHeader

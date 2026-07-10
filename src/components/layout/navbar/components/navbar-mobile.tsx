@@ -46,12 +46,21 @@ export default function NavbarMobile() {
       {/* Drawer container */}
       <div
         className={`
-          lg:hidden
-          fixed top-0 right-0 z-60
-          h-full w-80
-          transform transition-transform duration-300 ease-out
-          ${isOpen ? "translate-x-0" : "translate-x-full"}
-        `}
+    lg:hidden
+    fixed
+    inset-y-0
+    right-0
+    z-60
+    w-80
+    transform
+    transition-transform
+    duration-300
+    ease-out
+    ${isOpen
+            ? "translate-x-0"
+            : "translate-x-[120%] pointer-events-none"
+          }
+  `}
       >
         <Drawer
           variant="surface"
@@ -73,24 +82,26 @@ export default function NavbarMobile() {
           "
         >
           {/* Close button */}
-          <button
-            type="button"
+          <Button
+            variant="secondary"
             className="
-              self-end
-              text-sm
-              font-medium
-              text-zinc-200
-              hover:text-white
-              transition
-            "
-            onClick={() => setIsOpen(false)}
+    flex
+    h-10
+    w-10
+    items-center
+    justify-center
+    lg:hidden
+  "
+            onClick={() => setIsOpen(!isOpen)}
           >
-            ✕
-          </button>
+            {isOpen ? "✕" : "☰"}
+          </Button>
 
           <div className="mt-8 flex flex-col gap-8">
             {/* NAV MOBILE (IMPORTANTE) */}
-            <NavbarMobileNavigation />
+            <NavbarMobileNavigation
+              onNavigate={() => setIsOpen(false)}
+            />
 
             <NavbarActions />
             <ThemeModeToggle />

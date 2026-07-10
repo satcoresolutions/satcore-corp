@@ -39,7 +39,6 @@ export default function Features({
     <Section
       variant="glass"
       id="service-features"
-      className="p-10"
     >
       <Container>
 
@@ -56,17 +55,13 @@ export default function Features({
               text-sm
               font-medium
               text-primary
+              uppercase
             "
           >
             {labels.badge}
           </span>
 
           <h2
-            className="
-              mt-3
-              text-4xl
-              font-bold
-            "
           >
             {features.title}
           </h2>

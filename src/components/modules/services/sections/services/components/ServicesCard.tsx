@@ -7,6 +7,7 @@ import {
 
 import Card from "@/components/ui/card";
 import Button from "@/components/ui/button";
+import Image from "@/components/ui/image";
 
 import {
   serviceIcons,
@@ -48,7 +49,7 @@ export default function ServicesCard({
   image,
   imageAlt,
 }: ServicesCardProps) {
-  const Icon = serviceIcons[icon];
+  const ServiceIcon = serviceIcons[icon];
 
   return (
     <motion.div
@@ -68,9 +69,12 @@ export default function ServicesCard({
           overflow-hidden
         "
       >
-        <img
+        <Image
           src={image}
           alt={imageAlt}
+          variant="card"
+          width={600}
+          height={400}
           className="
             h-48
             w-full
@@ -84,15 +88,18 @@ export default function ServicesCard({
             flex-1
             flex-col
             p-6
+            text-center
           "
         >
-          <Icon
-            className="
-              h-10
-              w-10
-              text-secondary
-            "
-          />
+          <div className="flex justify-center">
+            <ServiceIcon
+              className="
+                h-10
+                w-10
+                text-secondary
+              "
+            />
+          </div>
 
           <h3
             className="

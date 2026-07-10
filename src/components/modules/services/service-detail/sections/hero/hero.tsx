@@ -9,8 +9,6 @@ import Hero, {
 
 import Container from "@/components/ui/container";
 
-import Card from "@/components/ui/card";
-
 import type {
   ServiceHeroProps,
 } from "./types/hero.types";
@@ -23,6 +21,7 @@ export default function ServiceHero({
     <Hero
       variant="editorial"
       height="lg"
+      className={`py-25` }
       backgroundImage={core.heroImage}
       overlay
     >
@@ -36,6 +35,7 @@ export default function ServiceHero({
                 inline-flex
                 items-center
                 gap-3
+                uppercase
               "
             >
               <span

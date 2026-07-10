@@ -34,6 +34,7 @@ export default function SoftwareHero({
     <Hero
       variant="editorial"
       height="lg"
+      className={`py-25`}
       backgroundImage={
         pillar.core.image
       }

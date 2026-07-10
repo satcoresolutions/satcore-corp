@@ -28,6 +28,7 @@ export default function ServicesFilters({
         flex
         flex-col
         gap-8
+        pt-5
       "
     >
       <h2

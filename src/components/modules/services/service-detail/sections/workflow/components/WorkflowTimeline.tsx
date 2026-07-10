@@ -11,7 +11,17 @@ export default function WorkflowTimeline({
 }: WorkflowTimelineProps) {
   return (
     <div className="mx-auto max-w-6xl">
-      <div className="grid grid-flow-col auto-cols-fr items-stretch gap-6">
+      <div
+  className="
+    grid
+    gap-6
+
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-3
+    xl:grid-cols-4
+  "
+>
         {steps.map((step, index) => (
           <motion.div
             key={step.title}

@@ -25,7 +25,7 @@ export default function ServicesHero({
     <Hero
       variant="editorial"
       height="full"
-      className={className}
+      className={`${className} py-25`}
       backgroundImage="/images/hero/hero-blog.png"
       overlay
     >
@@ -49,17 +49,18 @@ export default function ServicesHero({
           </p>
 
           <div
-          className="
-              mt-8
-              flex
-              flex-wrap
-              gap-3
+            className="
+             mt-8
+    flex
+    flex-wrap
+    justify-center
+    gap-3
             "
-        >
-          {content.features.map((feature) => (
-            <span
-              key={feature}
-              className="
+          >
+            {content.features.map((feature) => (
+              <span
+                key={feature}
+                className="
                   inline-flex
                   items-center
                   gap-2
@@ -73,14 +74,14 @@ export default function ServicesHero({
                   text-sm
                   backdrop-blur-sm
                 "
-            >
-              ✦ {feature}
-            </span>
-          ))}
-        </div>
+              >
+                ✦ {feature}
+              </span>
+            ))}
+          </div>
 
           {/* Actions */}
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap justify-center items-center gap-4">
             <Button variant="primary">
               <Link href={content.primaryAction.href}>
                 {content.primaryAction.label}

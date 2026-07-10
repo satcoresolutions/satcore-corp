@@ -17,8 +17,7 @@ export default function FeatureCard({
     >
       <h3
         className="
-          text-xl
-          font-semibold
+          text-center
         "
       >
         {feature.title}

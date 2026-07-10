@@ -53,6 +53,7 @@ export default function Workflow({
               text-sm
               font-medium
               text-primary
+              uppercase
             "
           >
             {workflow.badge ??

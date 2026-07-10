@@ -20,12 +20,6 @@ export default function PricingHeader({
       "
     >
       <h2
-        className="
-          text-3xl
-          font-bold
-          tracking-tight
-          md:text-4xl
-        "
       >
         {title}
       </h2>

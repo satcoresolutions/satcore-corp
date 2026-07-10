@@ -9,7 +9,6 @@ import type {
 export default function PortfolioSidebar({
   children,
   className = "",
-  onClose,
 }: portfolioSidebarProps & {
   className?: string;
   onClose?: () => void;
@@ -18,37 +17,34 @@ export default function PortfolioSidebar({
     <aside
       className={`
         ${className}
-
-        fixed
-        left-0
-        top-0
-        h-full
-        w-[320px]
-
         z-40
-
-        lg:static
-        lg:h-auto
-        lg:w-[320px]
       `}
     >
       <Card
         variant="glass"
         className="
-          h-full
-          lg:h-auto
-
           flex
+          max-h-[75vh]
           flex-col
-          gap-6
-          p-6
 
-          backdrop-blur-xl
-          bg-white/10
+          overflow-hidden
+
           border
+          bg-white/10
+          backdrop-blur-xl
+
+          lg:max-h-none
         "
       >
-        {children}
+        <div
+          className="
+            flex-1
+            overflow-y-auto
+            p-6
+          "
+        >
+          {children}
+        </div>
       </Card>
     </aside>
   );

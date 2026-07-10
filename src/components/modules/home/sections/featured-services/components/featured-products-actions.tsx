@@ -9,15 +9,15 @@ import {
 
 const content = {
   en: {
-    button: "View All Products",
+    button: "View All Services",
   },
 
   es: {
-    button: "Ver Todos los Productos",
+    button: "Ver Todos los Servicios",
   },
 
   pt: {
-    button: "Ver Todos os Produtos",
+    button: "Ver Todos os Serviços",
   },
 } as const;
 

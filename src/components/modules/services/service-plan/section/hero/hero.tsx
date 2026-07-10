@@ -43,6 +43,7 @@ export default function ServicePlanHero({
     <Hero
       variant="editorial"
       height="lg"
+      className={`py-25`}
       backgroundImage={
         core.heroImage
       }

@@ -101,21 +101,29 @@ export default function PortfolioCatalog() {
           {/* SIDEBAR DRAWER */}
           <PortfolioSidebar
             className={`
-              fixed
-              top-0
-              left-0
-              h-full
-              w-[320px]
-              z-50
+    fixed
 
-              transform transition-transform duration-300 ease-in-out
+    top-30
+    left-4
 
-              ${showFilters ? "translate-x-0" : "-translate-x-full"}
+    w-60
+    max-h-[75vh]
 
-              lg:static
-              lg:translate-x-0
-              lg:h-auto
-            `}
+    transition-transform
+    duration-300
+    ease-in-out
+
+    ${showFilters
+                ? "translate-x-0"
+                : "translate-x-[-120%]"
+              }
+
+    lg:static
+    lg:w-[320px]
+    lg:max-h-none
+    lg:translate-x-0
+    lg:transition-none
+  `}
             onClose={() => setShowFilters(false)}
           >
             <PortfolioSearch

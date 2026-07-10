@@ -56,6 +56,7 @@ export default function UseCases({
               text-sm
               font-medium
               text-primary
+              uppercase
             "
           >
             {labels.badge}

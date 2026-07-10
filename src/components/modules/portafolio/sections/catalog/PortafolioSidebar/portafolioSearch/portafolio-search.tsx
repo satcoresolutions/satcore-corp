@@ -24,13 +24,15 @@ export default function ServiceSearch({
     portfolioSearchContent[lang];
 
   return (
-    <Input
-    variant="filled"
-      value={value}
-      placeholder={content.placeholder}
-      onChange={(event) =>
-        onChange?.(event.target.value)
-      }
-    />
+    <div className="flex justify-center">
+      <Input
+        variant="filled"
+        value={value}
+        placeholder={content.placeholder}
+        onChange={(event) =>
+          onChange?.(event.target.value)
+        }
+      />
+    </div>
   );
 }

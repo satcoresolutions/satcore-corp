@@ -27,6 +27,7 @@ export default function HeroSection() {
     <Hero
       variant="editorial"
       height="full"
+      className={`py-25`}
       backgroundImage={
         "/images/hero/hero-legal.png"
       }
@@ -53,10 +54,11 @@ export default function HeroSection() {
 
         <div
           className="
-              mt-8
-              flex
-              flex-wrap
-              gap-3
+             mt-8
+    flex
+    flex-wrap
+    justify-center
+    gap-3
             "
         >
           {content.features.map((feature) => (
