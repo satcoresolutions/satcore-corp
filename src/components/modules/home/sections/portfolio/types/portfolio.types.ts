@@ -1,8 +1,3 @@
-import type {
-  PortfolioProject,
-} from "@/types/portfolio.types";
-
-
 /* ============================
    CONTENT
 ============================ */
