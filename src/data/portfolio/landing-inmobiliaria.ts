@@ -16,7 +16,7 @@ export const landingInmobiliaria: PortfolioProject = {
     "landing",
 
   image:
-    "/img/projects/landing_page_1.jpg",
+    "/images/projects/landing_page_1.jpg",
 
   href:
     "https://erick28hdz.github.io/Inmobiliaria-EleganciaHabitat/",

@@ -16,7 +16,7 @@ export const portafolioProfesional: PortfolioProject = {
     "corporativa",
 
   image:
-    "/img/projects/Portafolio_1.png",
+    "/images/projects/Portafolio_1.png",
 
   href:
     "https://erick28hdz.github.io/PortafolioWeb/",

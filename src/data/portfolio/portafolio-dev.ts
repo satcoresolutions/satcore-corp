@@ -16,7 +16,7 @@ export const portafolioDev: PortfolioProject = {
     "corporativa",
 
   image:
-    "/img/projects/portafolio_2.png",
+    "/images/projects/portafolio_2.png",
 
   href:
     "https://portafolio-erickhdz.vercel.app/",

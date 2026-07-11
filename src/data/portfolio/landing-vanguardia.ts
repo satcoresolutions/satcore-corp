@@ -16,7 +16,7 @@ export const landingVanguardia: PortfolioProject = {
     "landing",
 
   image:
-    "/img/projects/lp_vanguardia.png",
+    "/images/projects/lp_vanguardia.png",
 
   href:
     "https://lp-vanguardia.vercel.app/",

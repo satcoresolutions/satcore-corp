@@ -16,7 +16,7 @@ export const landingAgenciaViajes: PortfolioProject = {
     "landing",
 
   image:
-    "/img/projects/landing_page_2.png",
+    "/images/projects/landing_page_2.png",
 
   href:
     "https://erick28hdz.github.io/PaginaRumbo/",
