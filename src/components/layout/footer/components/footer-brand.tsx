@@ -14,17 +14,26 @@ export default function FooterBrand() {
   return (
     <div className="space-y-4 text-center">
       {/* LOGO */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center justify-center">
         <Icon
           src={assetsConfig.logoSecondary}
           alt={companyConfig.name}
           size="2xl"
           variant="brand"
+          className="pl-15"
         />
 
-        <h2 className="text-xl font-bold">
+        <h5
+        className="pr-10"
+          style={{
+            fontSize: "1.75rem",
+            fontWeight: 700,
+            lineHeight: 1,
+            margin: 0,
+          }}
+        >
           {companyConfig.name}
-        </h2>
+        </h5>
       </div>
 
       {/* DESCRIPTION (i18n) */}

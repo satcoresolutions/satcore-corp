@@ -59,7 +59,7 @@ export default function Navbar() {
             <NavbarBrand />
           </div>
 
-          <div className="relative z-10">
+          <div className="relative z-10 uppercase">
             <NavbarNavigation />
           </div>
 

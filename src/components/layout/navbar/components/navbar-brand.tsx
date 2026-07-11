@@ -16,12 +16,8 @@ export default function NavbarBrand() {
         size="xl"
         variant="brand"
         priority
-        className="h-8"
       />
-
-      <span className="text-lg font-semibold">
-        {companyConfig.name}
-      </span>
+     
     </Link>
   );
 }
