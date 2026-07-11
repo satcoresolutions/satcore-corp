@@ -37,7 +37,7 @@ export default function WorkflowStep({
 
         {/* contenido */}
         <div className="min-w-0">
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-center">
             {step.title}
           </h3>
 

@@ -10,21 +10,21 @@ export default function WorkflowTimeline({
   steps,
 }: WorkflowTimelineProps) {
   return (
-    <div className="mx-auto max-w-6xl">
+    <div className="mx-auto w-full">
       <div
-  className="
-    grid
-    gap-6
+        className="
+          grid
+          gap-6
 
-    grid-cols-1
-    sm:grid-cols-2
-    lg:grid-cols-3
-    xl:grid-cols-4
-  "
->
+          grid-cols-1
+          md:grid-cols-3
+          xl:grid-cols-5
+        "
+      >
         {steps.map((step, index) => (
           <motion.div
             key={step.title}
+            className="h-full"
             initial={{
               opacity: 0,
               x: -60,
@@ -42,7 +42,7 @@ export default function WorkflowTimeline({
             transition={{
               duration: 0.55,
               delay: index * 0.12,
-              ease: [0.16, 1, 0.3, 1], 
+              ease: [0.16, 1, 0.3, 1],
             }}
           >
             <WorkflowStep

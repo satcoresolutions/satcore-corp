@@ -33,7 +33,7 @@ export default function ServicesHero({
         <HeroContent>
           {/* Badge */}
           <HeroBadge>
-            <span className="inline-flex items-center gap-3">
+            <span className="inline-flex items-center gap-3 uppercase">
               <span className="h-px w-8 bg-primary" />
               {content.badge}
               <span className="h-px w-8 bg-primary" />

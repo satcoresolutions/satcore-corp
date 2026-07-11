@@ -59,6 +59,7 @@ export default function ServicePlanHero({
                 inline-flex
                 items-center
                 gap-3
+                uppercase
               "
             >
               <span

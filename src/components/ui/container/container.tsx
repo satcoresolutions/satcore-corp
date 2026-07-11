@@ -13,9 +13,9 @@ export default function Container({
         mx-auto
         w-full
 
-        px-4
-        sm:px-6
-        lg:px-8
+        px-6
+        sm:px-8
+        lg:px-10
 
         ${
           fluid

@@ -50,6 +50,7 @@ export default function SoftwareHero({
                 inline-flex
                 items-center
                 gap-3
+                uppercase
               "
             >
               <span
