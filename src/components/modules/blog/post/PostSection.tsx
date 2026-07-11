@@ -19,7 +19,7 @@ export default function PostSection({
 
 
     return (
-        <Section variant="glass" className="pt-20">
+        <Section variant="glass" className="pt-20 px-10">
 
             <PostHero
                 post={post}

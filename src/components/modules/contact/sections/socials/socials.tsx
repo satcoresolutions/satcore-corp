@@ -34,6 +34,7 @@ export default function Socials() {
   return (
     <Section
       spacing="none"
+      style={{ paddingTop: 5, paddingBottom: 5 }}
     >
       <motion.div
         initial={{

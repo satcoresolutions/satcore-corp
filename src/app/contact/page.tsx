@@ -24,7 +24,7 @@ export default function ContactPage() {
     <main>
       <Hero />
 
-      <Section id="contact">
+      <Section id="contact" style={{ paddingTop: 5, paddingBottom: 5 }}>
         <div
           className="
       grid

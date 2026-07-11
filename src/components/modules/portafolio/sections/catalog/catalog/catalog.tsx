@@ -41,7 +41,7 @@ export default function PortfolioCatalog() {
 
   return (
     <Section
-      id="portfolio-catalog"
+      id="portfolio"
       variant="transparent"
       className="py-10"
     >

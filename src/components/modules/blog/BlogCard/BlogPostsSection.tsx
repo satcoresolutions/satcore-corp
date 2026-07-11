@@ -79,6 +79,7 @@ export default function BlogPostsSection({
 
   return (
     <Section
+      id="articles"
       variant="default"
       className="py-10"
     >

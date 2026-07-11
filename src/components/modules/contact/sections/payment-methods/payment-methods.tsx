@@ -45,6 +45,7 @@ export default function PaymentMethods() {
     <Section
       id="payment-methods"
       spacing="none"
+      style={{ paddingTop: 5, paddingBottom: 5 }}
     >
       <motion.div
         initial={{

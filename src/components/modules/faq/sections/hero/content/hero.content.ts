@@ -1,49 +1,82 @@
 export const heroContent = {
   en: {
-    badge: "SatCore Blog",
+    badge: "Frequently Asked Questions",
 
     title:
-      "Insights, guides, and ideas to help you build better digital products.",
+      "Answers to the most common questions about our services and processes.",
 
     description:
-      "Explore articles on software development, artificial intelligence, web technologies, UI/UX, and digital strategy. Practical knowledge to help you make better technical and business decisions.",
+      "Find clear answers about our software development, artificial intelligence, cybersecurity, branding, digital products, pricing, timelines, and collaboration process. If you can't find what you're looking for, our team is here to help.",
 
     features: [
-      "Software Development",
-      "Artificial Intelligence",
-      "Digital Strategy",
+      "Quick Answers",
+      "Project Process",
+      "Support & Services",
     ],
+
+    primaryAction: {
+      label: "Browse FAQs",
+      href: "#faq",
+    },
+
+    secondaryAction: {
+      label: "Contact Us",
+      href: "/contact",
+    },
   },
 
   es: {
-    badge: "Blog de SatCore",
+    badge: "Preguntas Frecuentes",
 
     title:
-      "Ideas, guías y recursos para construir mejores productos digitales.",
+      "Respuestas a las preguntas más comunes sobre nuestros servicios y procesos.",
 
     description:
-      "Explora artículos sobre desarrollo de software, inteligencia artificial, tecnologías web, UI/UX y estrategia digital. Contenido práctico para ayudarte a tomar mejores decisiones técnicas y de negocio.",
+      "Encuentra respuestas claras sobre desarrollo de software, inteligencia artificial, ciberseguridad, branding, productos digitales, precios, tiempos de entrega y nuestra forma de trabajo. Si no encuentras la información que buscas, estaremos encantados de ayudarte.",
 
     features: [
-      "Desarrollo de Software",
-      "Inteligencia Artificial",
-      "Estrategia Digital",
+      "Respuestas Rápidas",
+      "Proceso de Trabajo",
+      "Soporte y Servicios",
     ],
+
+    primaryAction: {
+      label: "Ver Preguntas",
+      href: "#faq",
+    },
+
+    secondaryAction: {
+      label: "Contáctanos",
+      href: "/contact",
+    },
   },
 
   pt: {
-    badge: "Blog da SatCore",
+    badge: "Perguntas Frequentes",
 
     title:
-      "Ideias, guias e conteúdos para criar melhores produtos digitais.",
+      "Respostas para as dúvidas mais comuns sobre nossos serviços e processos.",
 
     description:
-      "Explore artigos sobre desenvolvimento de software, inteligência artificial, tecnologias web, UI/UX e estratégia digital. Conteúdo prático para ajudar você a tomar melhores decisões técnicas e de negócios.",
+      "Encontre respostas claras sobre desenvolvimento de software, inteligência artificial, cibersegurança, branding, produtos digitais, preços, prazos e nossa forma de trabalhar. Se você não encontrar o que procura, nossa equipe terá prazer em ajudar.",
 
     features: [
-      "Desenvolvimento de Software",
-      "Inteligência Artificial",
-      "Estratégia Digital",
+      "Respostas Rápidas",
+      "Processo de Trabalho",
+      "Suporte e Serviços",
     ],
+
+    primaryAction: {
+      label: "Ver Perguntas",
+      href: "#faq",
+    },
+
+    secondaryAction: {
+      label: "Fale Conosco",
+      href: "/contact",
+    },
   },
 } as const;
+
+export type HeroContent = typeof heroContent;
+export type HeroLanguage = keyof HeroContent;

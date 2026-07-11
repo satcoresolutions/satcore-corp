@@ -19,7 +19,7 @@ export const personalCardTemplate: PortfolioProject = {
     "/images/projects/personal_card_template.png",
 
   href:
-    "https://tu-demo.com",
+    "https://satcore-solutions-presentation-card.vercel.app/",
 
   technologies: [
     "Next.js",

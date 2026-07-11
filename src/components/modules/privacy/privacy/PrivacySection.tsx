@@ -23,7 +23,7 @@ export default function PrivacySection() {
     useLanguage();
 
   return (
-    <Section variant="default">
+    <Section id="privacy-policy" variant="default">
       <Container>
 
         <PrivacyHeader

@@ -17,7 +17,7 @@ export default function TermsSection() {
     const language = useLanguage();
 
     return (
-        <Section variant="default">
+        <Section id="terms" variant="default">
             <Container>
                 <TermsHeader
                     content={content.header}

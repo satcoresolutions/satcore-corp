@@ -20,7 +20,7 @@ export default function FAQSection() {
     );
 
   return (
-    <Section variant="default">
+    <Section id="faq" variant="default">
       <FAQLayout
         content={content}
       />
