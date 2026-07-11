@@ -23,7 +23,7 @@ export const branding: Pillar = {
     type: "Brand Identity",
 
     image:
-      "/img/services/branding/cover.webp",
+      "/images/hero/hero-branding.png",
 
     images: [
       "/img/services/branding/1.webp",
@@ -32,12 +32,11 @@ export const branding: Pillar = {
 
     technologies: [
       "Figma",
-      "Adobe Illustrator",
-      "Adobe Photoshop",
-      "Adobe InDesign",
-      "Adobe After Effects",
+      "Illustrator",
+      "Photoshop",
       "Canva",
-    ],
+      "CapCut",
+    ]
   },
 
   href: "/services/branding",

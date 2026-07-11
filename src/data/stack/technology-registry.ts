@@ -23,11 +23,11 @@ export const technologyRegistry = {
     icon: "/icons/stack/react.webp",
   },
 
-  "Next.js": {
+  Next: {
     icon: "/icons/stack/next-js.webp",
   },
 
-  "Next.js App Router": {
+  "Next.js": {
     icon: "/icons/stack/next-js.webp",
   },
 
@@ -36,15 +36,15 @@ export const technologyRegistry = {
   },
 
   "Framer Motion": {
-    icon: "/icons/stack/framer-motion.webp",
+    icon: "/icons/stack/framer.webp",
   },
 
   GSAP: {
     icon: "/icons/stack/gsap.webp",
   },
 
-  Lenis: {
-    icon: "/icons/stack/lenis.webp",
+  Angular: {
+    icon: "/icons/stack/angular.webp",
   },
 
   // ─────────────────────────────────────────────
@@ -63,6 +63,10 @@ export const technologyRegistry = {
     icon: "/icons/stack/express.webp",
   },
 
+  Python: {
+    icon: "/icons/stack/python.webp",
+  },
+
   NestJS: {
     icon: "/icons/stack/nestjs.webp",
   },
@@ -75,20 +79,16 @@ export const technologyRegistry = {
     icon: "/icons/stack/prisma.webp",
   },
 
-  "Server Actions": {
-    icon: "/icons/stack/server-actions.webp",
-  },
-
-  "Route Handlers": {
-    icon: "/icons/stack/route-handlers.webp",
-  },
-
   // ─────────────────────────────────────────────
   // Bases de Datos
   // ─────────────────────────────────────────────
 
   PostgreSQL: {
     icon: "/icons/stack/postgresql.webp",
+  },
+
+  MySQL: {
+    icon: "/icons/stack/mysql.webp",
   },
 
   MongoDB: {
@@ -115,33 +115,6 @@ export const technologyRegistry = {
     icon: "/icons/stack/strapi.webp",
   },
 
-  MDX: {
-    icon: "/icons/stack/mdx.webp",
-  },
-
-  // ─────────────────────────────────────────────
-  // Formularios y Validación
-  // ─────────────────────────────────────────────
-
-  Zod: {
-    icon: "/icons/stack/zod.webp",
-  },
-
-  "React Hook Form": {
-    icon: "/icons/stack/react-hook-form.webp",
-  },
-
-  // ─────────────────────────────────────────────
-  // Internacionalización y SEO
-  // ─────────────────────────────────────────────
-
-  "next-intl": {
-    icon: "/icons/stack/next-intl.webp",
-  },
-
-  "next-seo": {
-    icon: "/icons/stack/next-seo.webp",
-  },
 
   // ─────────────────────────────────────────────
   // Cloud & DevOps
@@ -163,8 +136,20 @@ export const technologyRegistry = {
     icon: "/icons/stack/cloudinary.webp",
   },
 
-  UploadThing: {
-    icon: "/icons/stack/uploadthing.webp",
+  Azure: {
+    icon: "/icons/stack/azure.webp",
+  },
+
+  GCP: {
+    icon: "/icons/stack/gcp.webp",
+  },
+
+  Render: {
+    icon: "/icons/stack/render.webp",
+  },
+
+  n8n: {
+    icon: "/icons/stack/n8n.webp",
   },
 
   // ─────────────────────────────────────────────
@@ -187,40 +172,24 @@ export const technologyRegistry = {
     icon: "/icons/stack/openai.webp",
   },
 
-  Pinecone: {
-    icon: "/icons/stack/pinecone.webp",
+  Claude: {
+    icon: "/icons/stack/claude.webp",
   },
 
-  Weaviate: {
-    icon: "/icons/stack/weaviate.webp",
+  Gemini: {
+    icon: "/icons/stack/gemini.webp",
   },
 
-  Qdrant: {
-    icon: "/icons/stack/qdrant.webp",
+  LangChain: {
+    icon: "/icons/stack/langchain.webp",
   },
 
-  // ─────────────────────────────────────────────
-  // Comunicación en Tiempo Real
-  // ─────────────────────────────────────────────
-
-  "Socket.io": {
-    icon: "/icons/stack/socket-io.webp",
+  LlamaIndex: {
+    icon: "/icons/stack/llamaindex.webp",
   },
 
-  // ─────────────────────────────────────────────
-  // Tablas y Visualización
-  // ─────────────────────────────────────────────
-
-  "TanStack Query": {
-    icon: "/icons/stack/tanstack-query.webp",
-  },
-
-  "TanStack Table": {
-    icon: "/icons/stack/tanstack-table.webp",
-  },
-
-  Recharts: {
-    icon: "/icons/stack/recharts.webp",
+  TensorFlow: {
+    icon: "/icons/stack/tensorflow.webp",
   },
 
   // ─────────────────────────────────────────────
@@ -243,20 +212,12 @@ export const technologyRegistry = {
     icon: "/icons/stack/google-analytics.webp",
   },
 
-  "Google Analytics 4": {
-    icon: "/icons/stack/google-analytics.webp",
-  },
-
   "Google Tag Manager": {
-    icon: "/icons/stack/google-tag-manager.webp",
-  },
-
-  "Meta Pixel": {
-    icon: "/icons/stack/meta-pixel.webp",
+    icon: "/icons/stack/tag-manager.webp",
   },
 
   "Microsoft Clarity": {
-    icon: "/icons/stack/microsoft-clarity.webp",
+    icon: "/icons/stack/clarity.webp",
   },
 
   Hotjar: {
@@ -277,14 +238,6 @@ export const technologyRegistry = {
 
   HubSpot: {
     icon: "/icons/stack/hubspot.webp",
-  },
-
-  "Email Marketing": {
-    icon: "/icons/stack/email-marketing.webp",
-  },
-
-  "Email Notifications": {
-    icon: "/icons/stack/email.webp",
   },
 
   // ─────────────────────────────────────────────
@@ -349,5 +302,114 @@ export const technologyRegistry = {
 
   "Stripe Connect": {
     icon: "/icons/stack/stripe.webp",
+  },
+
+  // ─────────────────────────────────────────────
+  // Diseño
+  // ─────────────────────────────────────────────
+
+
+  Figma: {
+    icon: "/icons/stack/figma.webp",
+  },
+
+  Canva: {
+    icon: "/icons/stack/canva.webp",
+  },
+
+  Photoshop: {
+    icon: "/icons/stack/photoshop.webp",
+  },
+
+  Illustrator: {
+    icon: "/icons/stack/illustrator.webp",
+  },
+
+  CapCut: {
+    icon: "/icons/stack/capcut.webp",
+  },
+
+  // ─────────────────────────────────────────────
+  // Marketing
+  // ─────────────────────────────────────────────
+
+  "Google Ads": {
+    icon: "/icons/stack/google-ads.webp",
+  },
+
+  "Meta Ads": {
+    icon: "/icons/stack/meta-ads.webp",
+  },
+
+  // ─────────────────────────────────────────────
+  // Testing
+  // ─────────────────────────────────────────────
+
+  Playwright: {
+    icon: "/icons/stack/playwright.webp",
+  },
+
+  Selenium: {
+    icon: "/icons/stack/selenium.webp",
+  },
+
+  // ─────────────────────────────────────────────
+  // Ciberseguridad
+  // ─────────────────────────────────────────────
+
+  Kali: {
+    icon: "/icons/stack/kali.webp",
+  },
+
+  Nmap: {
+    icon: "/icons/stack/nmap.webp",
+  },
+
+  Metasploit: {
+    icon: "/icons/stack/metasploit.webp",
+  },
+
+  Burp: {
+    icon: "/icons/stack/burp.webp",
+  },
+
+  OWASP: {
+    icon: "/icons/stack/owasp.webp",
+  },
+
+  OpenVAS: {
+    icon: "/icons/stack/openvas.webp",
+  },
+
+  Nessus: {
+    icon: "/icons/stack/nessus.webp",
+  },
+
+  Wireshark: {
+    icon: "/icons/stack/wireshark.webp",
+  },
+
+  Autopsy: {
+    icon: "/icons/stack/autopsy.webp",
+  },
+
+  Volatility: {
+    icon: "/icons/stack/volatility.webp",
+  },
+
+  ZAP: {
+    icon: "/icons/stack/zap.webp",
+  },
+
+  // ─────────────────────────────────────────────
+  // Productividad
+  // ─────────────────────────────────────────────
+
+  Notion: {
+    icon: "/icons/stack/notion.webp",
+  },
+
+  Trello: {
+    icon: "/icons/stack/trello.webp",
   },
 } as const;

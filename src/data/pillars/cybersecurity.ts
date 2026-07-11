@@ -1,4 +1,4 @@
-import type { Pillar }  from "@/types/pillar.types";
+import type { Pillar } from "@/types/pillar.types";
 
 import {
     Search,
@@ -23,7 +23,7 @@ export const cyberSecurity: Pillar = {
         type: "Cybersecurity",
 
         image:
-            "/img/services/cybersecurity/cover.webp",
+            "/images/hero/hero-ciberseguridad.png",
 
         images: [
             "/img/services/cybersecurity/1.webp",
@@ -31,39 +31,30 @@ export const cyberSecurity: Pillar = {
         ],
 
         technologies: [
-            // OPERATING SYSTEMS
-            "Linux",
-            "Windows Server",
-
-            // SECURITY FRAMEWORKS
-            "OWASP",
-            "MITRE ATT&CK",
-            "NIST",
-            "CIS Controls",
-
-            // PENTESTING
-            "Kali Linux",
+            // Pentesting y Análisis
+            "Kali",
             "Metasploit",
-            "Burp Suite",
+            "Burp",
             "Nmap",
             "Wireshark",
-
-            // VULNERABILITY SCANNING
             "OpenVAS",
             "Nessus",
+            "Autopsy",
+            "Volatility",
+            "ZAP",
 
-            // CLOUD SECURITY
+            // Cloud Security
             "AWS",
             "Azure",
+            "GCP",
 
-            // AUTOMATION
+            // Automatización
             "Python",
-            "Bash",
 
-            // VERSION CONTROL
+            // Versionamiento
             "Git",
             "GitHub",
-        ],
+        ]
     },
 
     href: "/services/cybersecurity",

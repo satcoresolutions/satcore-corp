@@ -32,21 +32,19 @@ export const landingPageBasic: ServicePlan = {
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Route Handlers",
     ],
 
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Server Actions",
       "Google Analytics",
     ],
 
     integrations: [
       "Google Analytics",
       "Google Sheets",
-      "Email Notifications",
+      "Resend",
     ],
 
     // ────────────────────────────────────

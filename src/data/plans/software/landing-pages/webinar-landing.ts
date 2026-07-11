@@ -30,31 +30,36 @@ export const webinarLanding: ServicePlan = {
 
         stack: [
             "Next.js",
+            "React",
             "TypeScript",
             "Tailwind CSS",
             "Framer Motion",
-            "Server Actions",
         ],
 
         technologies: [
-            "Next.js App Router",
+            "Next.js",
+            "React",
             "TypeScript",
             "Tailwind CSS",
             "Framer Motion",
-            "Route Handlers",
-            "React Hook Form",
-            "next-seo",
-        ],
-
-        integrations: [
-            "Google Analytics 4",
+            "Google Analytics",
             "Google Tag Manager",
-            "Meta Pixel",
             "Google Calendar",
             "Zoom",
             "Google Meet",
             "YouTube Live",
             "Vimeo",
+        ],
+
+        integrations: [
+            "Google Analytics",
+            "Google Tag Manager",
+            "Google Calendar",
+            "Zoom",
+            "Google Meet",
+            "YouTube Live",
+            "Vimeo",
+            "Google Sheets",
             "Resend",
             "Mailchimp",
             "Calendly",

@@ -30,28 +30,30 @@ export const eventLanding: ServicePlan = {
 
         stack: [
             "Next.js",
+            "React",
             "TypeScript",
             "Tailwind CSS",
             "Framer Motion",
-            "Server Actions",
         ],
 
         technologies: [
-            "Next.js App Router",
+            "Next.js",
+            "React",
             "TypeScript",
             "Tailwind CSS",
             "Framer Motion",
-            "Route Handlers",
-            "React Hook Form",
-            "next-seo",
+            "Google Analytics",
+            "Google Tag Manager",
+            "Google Maps",
+            "Google Calendar",
         ],
 
         integrations: [
-            "Google Analytics 4",
+            "Google Analytics",
             "Google Tag Manager",
-            "Meta Pixel",
             "Google Maps",
             "Google Calendar",
+            "Google Sheets",
             "Resend",
             "Mailchimp",
         ],

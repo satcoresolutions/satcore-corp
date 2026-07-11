@@ -23,7 +23,7 @@ export const education: Pillar = {
     type: "Professional Training",
 
     image:
-      "/img/services/education/cover.webp",
+      "/images/hero/hero-educacion.png",
 
     images: [
       "/img/services/education/1.webp",
@@ -31,37 +31,85 @@ export const education: Pillar = {
     ],
 
     technologies: [
-      // FRONTEND
-      "HTML5",
-      "CSS3",
+      // Frontend
+      "HTML",
+      "CSS",
       "JavaScript",
       "TypeScript",
       "React",
       "Next.js",
+      "Angular",
+      "Tailwind CSS",
+      "Framer Motion",
 
-      // BACKEND
+      // Backend
       "Node.js",
+      "Express",
       "NestJS",
       "Python",
-      "FastAPI",
+      "GraphQL",
+      "Prisma",
 
-      // DATABASES
+      // Bases de Datos
       "PostgreSQL",
+      "MySQL",
       "MongoDB",
+      "Redis",
+      "Firebase",
+      "Supabase",
 
-      // AI
-      "OpenAI",
-      "LangChain",
-
-      // CYBERSECURITY
-      "OWASP",
-      "Nmap",
-
-      // DEVOPS
+      // Cloud & DevOps
       "Docker",
+      "AWS",
+      "Azure",
+      "GCP",
+      "Vercel",
+      "Render",
       "Git",
       "GitHub",
-    ],
+
+      // Inteligencia Artificial
+      "OpenAI",
+      "Claude",
+      "Gemini",
+      "LangChain",
+      "LlamaIndex",
+      "TensorFlow",
+
+      // Testing
+      "Playwright",
+      "Selenium",
+
+      // Ciberseguridad
+      "Kali",
+      "Nmap",
+      "Metasploit",
+      "Burp",
+      "OWASP",
+      "OpenVAS",
+      "Nessus",
+      "Wireshark",
+      "Autopsy",
+      "Volatility",
+      "ZAP",
+
+      // Diseño
+      "Figma",
+      "Canva",
+      "Photoshop",
+      "Illustrator",
+      "CapCut",
+
+      // CMS
+      "Strapi",
+
+      // Automatización
+      "n8n",
+
+      // Productividad
+      "Notion",
+      "Trello",
+    ]
   },
 
   href: "/services/education",

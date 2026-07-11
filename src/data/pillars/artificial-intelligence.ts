@@ -23,7 +23,7 @@ export const artificialIntelligence: Pillar = {
     type: "Artificial Intelligence",
 
     image:
-      "/img/services/artificial-intelligence/cover.webp",
+      "/images/hero/hero-ia.png",
 
     images: [
       "/img/services/artificial-intelligence/1.webp",
@@ -31,40 +31,40 @@ export const artificialIntelligence: Pillar = {
     ],
 
     technologies: [
-      // AI MODELS
+      // Modelos de IA
       "OpenAI",
-      "Anthropic",
+      "Claude",
       "Gemini",
-      "Llama",
 
-      // FRAMEWORKS
+      // Frameworks IA
       "LangChain",
-      "LangGraph",
       "LlamaIndex",
+      "TensorFlow",
 
-      // BACKEND
+      // Backend
       "Python",
-      "FastAPI",
       "Node.js",
 
-      // VECTOR DATABASES
-      "Pinecone",
-      "ChromaDB",
-      "FAISS",
+      // Bases de Datos
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
 
-      // AUTOMATION
+      // Automatización
       "n8n",
-      "Make",
 
-      // DEPLOYMENT
+      // Cloud & DevOps
       "Docker",
       "AWS",
+      "Azure",
+      "GCP",
       "Vercel",
+      "Render",
 
-      // TOOLS
+      // Versionamiento
       "Git",
       "GitHub",
-    ],
+    ]
   },
 
   href: "/services/artificial-intelligence",

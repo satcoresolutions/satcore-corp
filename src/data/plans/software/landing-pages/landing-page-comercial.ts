@@ -32,22 +32,21 @@ export const commercialLanding: ServicePlan = {
             "Next.js",
             "TypeScript",
             "Tailwind CSS",
-            "Server Actions",
         ],
 
         technologies: [
             "Next.js",
-            "Tailwind CSS",
             "TypeScript",
-            "Route Handlers",
+            "Tailwind CSS",
             "Google Analytics",
+            "Google Tag Manager",
         ],
 
         integrations: [
             "Google Analytics",
-            "Meta Pixel",
             "Google Tag Manager",
-            "Email Marketing",
+            "Google Sheets",
+            "Resend",
         ],
 
         // ────────────────────────────────────
