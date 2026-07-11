@@ -26,12 +26,28 @@ import {
   landingVanguardia,
 } from "./landing-vanguardia";
 
+import {
+  digitalCatalogTemplate
+} from "./digital-catalog-template";
+
+import {
+  commercialLandingTemplate
+} from "./commercial-landing-template";
+
+import {
+  personalCardTemplate
+} from "./personal-card-template";
+
 export const portfolioData = [
-  landingInmobiliaria,
-  landingAgenciaViajes,
-  webCorporativa,
-  portafolioProfesional,
-  portafolioDev,
-  generadorContrasenas,
+  personalCardTemplate,
+  digitalCatalogTemplate,
+  commercialLandingTemplate,
+
   landingVanguardia,
+  generadorContrasenas,
+  portafolioDev,
+  portafolioProfesional,
+  webCorporativa,
+  landingAgenciaViajes,
+  landingInmobiliaria,
 ];

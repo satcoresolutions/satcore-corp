@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  useEffect,
   useState,
 } from "react";
 
@@ -28,37 +29,55 @@ export interface UsePaginationReturn {
 
 export default function usePagination({
   totalItems,
-  itemsPerPage = 6,
+  itemsPerPage,
 }: UsePaginationProps): UsePaginationReturn {
-  const [
-    currentPage,
-    setCurrentPage,
-  ] = useState(1);
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const [responsiveItemsPerPage, setResponsiveItemsPerPage] =
+    useState(12);
+
+  useEffect(() => {
+    const updateItems = () => {
+      setResponsiveItemsPerPage(
+        window.innerWidth < 640 ? 6 : 12
+      );
+    };
+
+    updateItems();
+
+    window.addEventListener(
+      "resize",
+      updateItems
+    );
+
+    return () =>
+      window.removeEventListener(
+        "resize",
+        updateItems
+      );
+  }, []);
+
+  const finalItemsPerPage =
+    itemsPerPage ?? responsiveItemsPerPage;
 
   const totalPages = Math.max(
     1,
-    Math.ceil(
-      totalItems / itemsPerPage
-    )
+    Math.ceil(totalItems / finalItemsPerPage)
   );
 
   const startIndex =
-    (currentPage - 1) *
-    itemsPerPage;
+    (currentPage - 1) * finalItemsPerPage;
 
   const endIndex =
-    startIndex +
-    itemsPerPage;
+    startIndex + finalItemsPerPage;
 
   return {
     currentPage,
     setCurrentPage,
-
     totalPages,
-
     startIndex,
     endIndex,
-
-    itemsPerPage,
+    itemsPerPage: finalItemsPerPage,
   };
 }

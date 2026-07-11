@@ -16,7 +16,7 @@ export const generadorContrasenas: PortfolioProject = {
     "custom",
 
   image:
-    "/imgages/projects/Generador_contraseñas.png",
+    "/images/projects/generador-contrasenas.png",
 
   href:
     "https://generador-contrasenas-pro.onrender.com/",
