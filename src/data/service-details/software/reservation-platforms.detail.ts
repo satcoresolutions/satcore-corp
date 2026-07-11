@@ -18,7 +18,7 @@ export const reservationPlatformsDetail: ServiceDetail = {
 
     icon: "calendar",
 
-    heroImage: "/images/services/software/reservation-platforms/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const reservationPlatformsDetail: ServiceDetail = {
 
         description: "Una plataforma de reservas es un sistema que permite a clientes reservar citas, horarios o servicios a través de internet. Incluye calendario de disponibilidad, confirmación automática y recordatorios.",
 
-        image: "/images/subservices/reservation-platforms/reservation.png",
+        image: "/images/subservices/software/reservation-plataform.png",
 
         imageAlt: "Plataforma de reservas",
 

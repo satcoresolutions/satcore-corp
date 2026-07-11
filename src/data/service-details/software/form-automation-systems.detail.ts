@@ -18,7 +18,7 @@ export const formAutomationSystemsDetail: ServiceDetail = {
 
     icon: "file-text",
 
-    heroImage: "/images/services/software/form-automation-systems/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const formAutomationSystemsDetail: ServiceDetail = {
 
         description: "La automatización de formularios es el proceso de digitalizar y automatizar la recolección de información mediante formularios. Incluye diseño, validación, envío automático, integración con bases de datos y generación de reportes.",
 
-        image: "/images/subservices/form-automation-systems/forms.png",
+        image: "/images/subservices/software/form-automation.png",
 
         imageAlt: "Automatización de formularios",
 

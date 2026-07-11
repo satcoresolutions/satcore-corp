@@ -12,8 +12,17 @@ export default function Container({
       className={`
         mx-auto
         w-full
+
         px-4
-        ${fluid ? "" : "max-w-7xl"}
+        sm:px-6
+        lg:px-8
+
+        ${
+          fluid
+            ? ""
+            : "max-w-screen-2xl"
+        }
+
         ${className}
       `}
       style={{

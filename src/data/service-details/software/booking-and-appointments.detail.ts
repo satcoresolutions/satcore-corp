@@ -18,7 +18,7 @@ export const bookingAndAppointmentsDetail: ServiceDetail = {
 
     icon: "calendar-check",
 
-    heroImage: "/images/services/software/booking-and-appointments/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const bookingAndAppointmentsDetail: ServiceDetail = {
 
         description: "Un sistema de reservas y citas es una plataforma que permite a clientes reservar servicios, citas o recursos a través de internet. Incluye disponibilidad en tiempo real, confirmaciones y gestión completa.",
 
-        image: "/images/subservices/booking-and-appointments/booking.png",
+        image: "/images/subservices/software/booking-citas.png",
 
         imageAlt: "Sistema de reservas",
 

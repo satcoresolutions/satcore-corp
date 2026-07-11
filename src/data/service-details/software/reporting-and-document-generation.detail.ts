@@ -18,7 +18,7 @@ export const reportingAndDocumentGenerationDetail: ServiceDetail = {
 
     icon: "file-text",
 
-    heroImage: "/images/services/software/reporting-and-document-generation/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const reportingAndDocumentGenerationDetail: ServiceDetail = {
 
         description: "La generación de documentos es el proceso de crear documentos de forma automatizada a partir de plantillas y datos. Permite generar reportes, facturas, contratos y otros documentos de manera eficiente y sin errores.",
 
-        image: "/images/subservices/reporting-and-document-generation/reports.png",
+        image: "/images/subservices/software/reporting-generation.png",
 
         imageAlt: "Generación de documentos",
 

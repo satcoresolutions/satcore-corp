@@ -18,7 +18,7 @@ export const landingPagesDetail: ServiceDetail = {
 
     icon: "globe",
 
-    heroImage: "/images/services/software/landing-pages/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: softwarePlans,
   },
@@ -36,7 +36,7 @@ export const landingPagesDetail: ServiceDetail = {
 
         description: "Una landing page es una página web diseñada con un único objetivo: lograr una conversión. A diferencia de un sitio web tradicional, elimina distracciones y dirige al usuario hacia una acción específica, como solicitar una cotización, registrarse, descargar un recurso o realizar una compra.",
 
-        image: "/images/subservices/landing-pages/landing-page.png",
+        image: "/images/subservices/software/landing-page.png",
 
         imageAlt: "Diseño profesional de Landing Pages",
 

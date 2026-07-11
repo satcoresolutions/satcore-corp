@@ -18,7 +18,7 @@ export const directoriesDetail: ServiceDetail = {
 
     icon: "list",
 
-    heroImage: "/images/services/software/directories/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const directoriesDetail: ServiceDetail = {
 
         description: "Un directorio es una plataforma que organiza y muestra información de negocios, profesionales o servicios de manera categorizada. Permite a los usuarios buscar, filtrar y encontrar proveedores de servicios de forma eficiente.",
 
-        image: "/images/subservices/directories/directory.png",
+        image: "/images/subservices/software/directorios.png",
 
         imageAlt: "Directorio profesional",
 

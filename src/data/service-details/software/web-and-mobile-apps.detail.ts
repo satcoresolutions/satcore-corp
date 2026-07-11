@@ -18,7 +18,7 @@ export const webAndMobileAppsDetail: ServiceDetail = {
 
     icon: "smartphone",
 
-    heroImage: "/images/services/software/web-and-mobile-apps/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const webAndMobileAppsDetail: ServiceDetail = {
 
         description: "Las aplicaciones web y móviles son programas desarrollados a medida para realizar funciones específicas. Las web funcionan en navegadores; las móviles se instalan en dispositivos y pueden acceder a funciones nativas del dispositivo.",
 
-        image: "/images/subservices/web-and-mobile-apps/apps.png",
+        image: "/images/subservices/software/app-mobile.png",
 
         imageAlt: "Aplicaciones web y móviles",
 

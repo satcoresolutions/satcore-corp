@@ -18,7 +18,7 @@ export const businessWebsitesDetail: ServiceDetail = {
 
     icon: "briefcase",
 
-    heroImage: "/images/services/software/business-websites/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const businessWebsitesDetail: ServiceDetail = {
 
         description: "Un sitio web corporativo es la carta de presentación digital de tu empresa. Incluye información sobre la compañía, servicios, equipo, testimonios y datos de contacto. Está diseñado para generar confianza, atraer clientes potenciales y fortalecer la imagen de marca.",
 
-        image: "/images/subservices/business-websites/business-website.png",
+        image: "/images/subservices/software/sitios-web.png",
 
         imageAlt: "Sitio web corporativo profesional",
 

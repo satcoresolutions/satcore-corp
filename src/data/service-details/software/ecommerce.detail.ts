@@ -18,7 +18,7 @@ export const ecommerceDetail: ServiceDetail = {
 
     icon: "shopping-cart",
 
-    heroImage: "/images/services/software/ecommerce/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const ecommerceDetail: ServiceDetail = {
 
         description: "Una tienda online es una plataforma de comercio electrónico que permite vender productos o servicios a través de internet. Incluye catálogo de productos, carrito de compras, proceso de pago seguro, gestión de inventario y herramientas de marketing para impulsar tus ventas.",
 
-        image: "/images/subservices/ecommerce/ecommerce.png",
+        image: "/images/subservices/software/online-shop.png",
 
         imageAlt: "Tienda online profesional",
 

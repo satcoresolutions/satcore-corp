@@ -18,7 +18,7 @@ export const saasProductsDetail: ServiceDetail = {
 
     icon: "cloud",
 
-    heroImage: "/images/services/software/saas-products/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const saasProductsDetail: ServiceDetail = {
 
         description: "Un producto SaaS es una aplicación software entregada через интернет como servicio. Los usuarios acceden через браузер o app sin necesidad de instalar nada. Se cobra por suscripción (mensual/anual).",
 
-        image: "/images/subservices/saas-products/saas.png",
+        image: "/images/subservices/software/saas-products.png",
 
         imageAlt: "Producto SaaS",
 

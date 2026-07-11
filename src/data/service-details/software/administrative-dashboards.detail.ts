@@ -18,7 +18,7 @@ export const administrativeDashboardsDetail: ServiceDetail = {
 
     icon: "layout-dashboard",
 
-    heroImage: "/images/services/software/administrative-dashboards/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const administrativeDashboardsDetail: ServiceDetail = {
 
         description: "Un dashboard administrativo es una interfaz visual que muestraKPIs, métricas y datos importantes de tu negocio de manera organizada. Permite monitorear el rendimiento, identificar tendencias y tomar decisiones basadas en datos.",
 
-        image: "/images/subservices/administrative-dashboards/dashboard.png",
+        image: "/images/subservices/software/dashboard.png",
 
         imageAlt: "Dashboard administrativo profesional",
 

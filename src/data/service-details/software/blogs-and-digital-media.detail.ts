@@ -18,7 +18,7 @@ export const blogsAndDigitalMediaDetail: ServiceDetail = {
 
     icon: "book-open",
 
-    heroImage: "/images/services/software/blogs-and-digital-media/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const blogsAndDigitalMediaDetail: ServiceDetail = {
 
         description: "Un blog o plataforma de medios digitales es un espacio donde puedes publicar artículos, noticias y contenido multimedia. Está diseñado para atraer audiencia, mejorar el posicionamiento en buscadores y establecer tu autoridad en tu industria.",
 
-        image: "/images/subservices/blogs-and-digital-media/blog.png",
+        image: "/images/subservices/software/blogs-medios.png",
 
         imageAlt: "Blog profesional",
 

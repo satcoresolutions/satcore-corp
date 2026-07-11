@@ -18,7 +18,7 @@ export const elearningSystemsDetail: ServiceDetail = {
 
     icon: "graduation-cap",
 
-    heroImage: "/images/services/software/elearning-systems/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const elearningSystemsDetail: ServiceDetail = {
 
         description: "Un sistema de e-learning es una plataforma que permite la entrega de educación a través de internet. Incluye gestión de cursos, evaluaciones, progreso de estudiantes, certificados y herramientas de interacción.",
 
-        image: "/images/subservices/elearning-systems/elearning.png",
+        image: "/images/subservices/software/e-learning.png",
 
         imageAlt: "Sistema de e-learning",
 

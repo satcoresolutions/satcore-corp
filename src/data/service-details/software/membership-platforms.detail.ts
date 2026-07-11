@@ -18,7 +18,7 @@ export const membershipPlatformsDetail: ServiceDetail = {
 
     icon: "user-check",
 
-    heroImage: "/images/services/software/membership-platforms/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const membershipPlatformsDetail: ServiceDetail = {
 
         description: "Una plataforma de membresía es un sistema que permite ofrecer contenido o servicios exclusivos a cambio de una suscripción. Los miembros pagan regularmente para acceder a beneficios que no están disponibles al público general.",
 
-        image: "/images/subservices/membership-platforms/membership.png",
+        image: "/images/subservices/software/membership-plataforms.png",
 
         imageAlt: "Plataforma de membresía",
 

@@ -18,7 +18,7 @@ export const socialNetworkingPlatformsDetail: ServiceDetail = {
 
     icon: "share-2",
 
-    heroImage: "/images/services/software/social-networking-platforms/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const socialNetworkingPlatformsDetail: ServiceDetail = {
 
         description: "Una plataforma de redes sociales es un sitio que permite a usuarios crear perfiles, conectar con otros, compartir contenido y comunicarse. Incluye feeds, mensajería, grupos y herramientas de interacción.",
 
-        image: "/images/subservices/social-networking-platforms/social.png",
+        image: "/images/subservices/software/social-networking.png",
 
         imageAlt: "Plataforma de redes sociales",
 

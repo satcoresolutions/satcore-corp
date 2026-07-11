@@ -18,7 +18,7 @@ export const advancedUtilitiesAndWebToolsDetail: ServiceDetail = {
 
     icon: "wrench",
 
-    heroImage: "/images/services/software/advanced-utilities-and-web-tools/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const advancedUtilitiesAndWebToolsDetail: ServiceDetail = {
 
         description: "Las utilitarias web son aplicaciones especializadas diseñadas para realizar tareas específicas de forma eficiente. Pueden incluir calculadoras, convertidores, generadores, herramientas de productividad y cualquier aplicación web personalizada que necesites.",
 
-        image: "/images/subservices/advanced-utilities-and-web-tools/utilities.png",
+        image: "/images/subservices/software/utilities-advanced.png",
 
         imageAlt: "Herramientas web avanzadas",
 

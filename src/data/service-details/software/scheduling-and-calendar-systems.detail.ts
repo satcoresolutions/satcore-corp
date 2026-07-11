@@ -18,7 +18,7 @@ export const schedulingAndCalendarSystemsDetail: ServiceDetail = {
 
     icon: "calendar",
 
-    heroImage: "/images/services/software/scheduling-and-calendar-systems/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const schedulingAndCalendarSystemsDetail: ServiceDetail = {
 
         description: "Un sistema de agenda y calendario es una herramienta que permite planificar eventos, reuniones y actividades. Incluye calendario, recordatorios, programación de eventos y colaboración.",
 
-        image: "/images/subservices/scheduling-and-calendar-systems/calendar.png",
+       image: "/images/subservices/software/calendar-system.png",
 
         imageAlt: "Sistema de agenda",
 

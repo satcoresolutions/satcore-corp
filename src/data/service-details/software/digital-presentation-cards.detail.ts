@@ -18,7 +18,7 @@ export const digitalPresentationCardsDetail: ServiceDetail = {
 
         icon: "credit-card",
 
-        heroImage: "/images/services/software/digital-presentation-cards/hero/hero.png",
+        heroImage: "/images/services/software/hero/hero.png",
 
         plans: [],
     },
@@ -36,7 +36,7 @@ export const digitalPresentationCardsDetail: ServiceDetail = {
 
                 description: "Es una solución digital que reemplaza la tarjeta de presentación tradicional, permitiendo compartir información profesional, datos de contacto, redes sociales, portafolio y otros recursos desde una única página optimizada para cualquier dispositivo.",
 
-                image: "/images/services/software/digital-presentation-cards/digital-presentation-card.png",
+                image: "/images/subservices/software/presentation-card.png",
 
                 imageAlt: "Tarjeta de presentación digital profesional",
 

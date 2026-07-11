@@ -18,7 +18,7 @@ export const enterpriseResourcePlanningDetail: ServiceDetail = {
 
     icon: "package",
 
-    heroImage: "/images/services/software/enterprise-resource-planning/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const enterpriseResourcePlanningDetail: ServiceDetail = {
 
         description: "Un sistema ERP es una plataforma que integra y gestiona todos los procesos empresariales: finanzas, inventario, compras, ventas, recursos humanos y más en un solo sistema unificado.",
 
-        image: "/images/subservices/enterprise-resource-planning/erp.png",
+        image: "/images/subservices/software/erp.png",
 
         imageAlt: "Sistema ERP",
 

@@ -18,7 +18,7 @@ export const fileAndDocumentManagementDetail: ServiceDetail = {
 
     icon: "folder",
 
-    heroImage: "/images/services/software/file-and-document-management/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const fileAndDocumentManagementDetail: ServiceDetail = {
 
         description: "Un sistema de gestión documental es una plataforma que permite almacenar, organizar y administrar documentos digitales. Incluye versionado, búsqueda, permisos y flujos de trabajo para aprobar documentos.",
 
-        image: "/images/subservices/file-and-document-management/documents.png",
+        image: "/images/subservices/software/file-management.png",
 
         imageAlt: "Gestión de documentos",
 

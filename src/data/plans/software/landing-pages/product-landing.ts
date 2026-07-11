@@ -67,10 +67,10 @@ export const productLanding: ServicePlan = {
         // ────────────────────────────────────
 
         heroImage:
-            "/images/services/software/landing-pages/product/hero.png",
+            "/images/services/software/hero/hero-lp.png",
 
         image:
-            "/images/services/software/landing-pages/product/cover.webp",
+            "/images/services/software/hero/hero-lp.png",
     },
 
     translations: {

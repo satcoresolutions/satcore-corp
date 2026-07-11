@@ -27,7 +27,7 @@ export const professionalPortfoliosDetail: ServiceDetail = {
     es: {
       title: "Portafolios Profesionales",
 
-      subtitle: "展示 tu trabajo de manera impactante",
+      subtitle: "tu trabajo de manera impactante",
 
       description: "Creamos portafolios profesionales que muestran tu trabajo de manera visual y atractiva. Desde portfolios para diseñadores hasta profesionales independientes, cada proyecto está diseñado para impresionar y convertir.",
 

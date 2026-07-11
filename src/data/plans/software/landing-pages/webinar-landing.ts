@@ -65,10 +65,10 @@ export const webinarLanding: ServicePlan = {
         // ────────────────────────────────────
 
         heroImage:
-            "/images/services/software/landing-pages/webinar/hero.png",
+            "/images/services/software/hero/hero-lp.png",
 
         image:
-            "/images/services/software/landing-pages/webinar/cover.webp",
+            "/images/services/software/hero/hero-lp.png",
     },
 
     translations: {

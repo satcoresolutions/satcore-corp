@@ -18,7 +18,7 @@ export const communicationSystemsDetail: ServiceDetail = {
 
     icon: "message-circle",
 
-    heroImage: "/images/services/software/communication-systems/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const communicationSystemsDetail: ServiceDetail = {
 
         description: "Un sistema de comunicación es una plataforma que permite el intercambio de información entre usuarios. Puede incluir mensajería instantánea, chats de soporte, sistemas de notificaciones y más.",
 
-        image: "/images/subservices/communication-systems/communication.png",
+        image: "/images/subservices/software/sistema-comunicacion.png",
 
         imageAlt: "Sistema de comunicación",
 

@@ -18,7 +18,7 @@ export const aiAssistantSolutionsDetail: ServiceDetail = {
 
     icon: "bot",
 
-    heroImage: "/images/services/software/ai-assistant-solutions/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const aiAssistantSolutionsDetail: ServiceDetail = {
 
         description: "Un asistente de IA es un programa inteligente que utiliza inteligencia artificial para conversar con usuarios, responder preguntas y realizar tareas de forma automatizada. Pueden integrarse en tu sitio web, app o plataformas de mensajería para proporcionar soporte 24/7.",
 
-        image: "/images/subservices/ai-assistant-solutions/ai-assistant.png",
+        image: "/images/subservices/software/asistente-ia.png",
 
         imageAlt: "Asistente de IA profesional",
 

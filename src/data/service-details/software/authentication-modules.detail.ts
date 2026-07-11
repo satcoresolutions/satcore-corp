@@ -18,7 +18,7 @@ export const authenticationModulesDetail: ServiceDetail = {
 
     icon: "lock",
 
-    heroImage: "/images/services/software/authentication-modules/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const authenticationModulesDetail: ServiceDetail = {
 
         description: "Un módulo de autenticación es un sistema que verifica la identidad de los usuarios antes de permitir el acceso a una aplicación. Incluye registro, inicio de sesión, recuperación de contraseña y verificación de identidad.",
 
-        image: "/images/subservices/authentication-modules/auth.png",
+        image: "/images/subservices/software/modulos-autenticacion.png",
 
         imageAlt: "Módulo de autenticación seguro",
 

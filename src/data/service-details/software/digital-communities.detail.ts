@@ -18,7 +18,7 @@ export const digitalCommunitiesDetail: ServiceDetail = {
 
     icon: "users",
 
-    heroImage: "/images/services/software/digital-communities/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const digitalCommunitiesDetail: ServiceDetail = {
 
         description: "Una comunidad digital es una plataforma online que agrupa a personas con intereses, objetivos o características comunes. Permite la interacción, el intercambio de conocimiento y la construcción de relaciones entre miembros.",
 
-        image: "/images/subservices/digital-communities/community.png",
+        image: "/images/subservices/software/comunidades-digitales.png",
 
         imageAlt: "Comunidad digital",
 

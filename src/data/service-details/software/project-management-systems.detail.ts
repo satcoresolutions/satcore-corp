@@ -18,7 +18,7 @@ export const projectManagementSystemsDetail: ServiceDetail = {
 
     icon: "check-square",
 
-    heroImage: "/images/services/software/project-management-systems/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const projectManagementSystemsDetail: ServiceDetail = {
 
         description: "Un sistema de gestión de proyectos es una herramienta que permite organizar tareas, asignar responsabilidades, seguir el progreso y colaborar en proyectos. Ayuda a equipos a trabajar de forma más eficiente.",
 
-        image: "/images/subservices/project-management-systems/project.png",
+        image: "/images/subservices/software/project-management.png",
 
         imageAlt: "Gestión de proyectos",
 

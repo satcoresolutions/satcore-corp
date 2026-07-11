@@ -18,7 +18,7 @@ export const marketplacesDetail: ServiceDetail = {
 
     icon: "shopping-bag",
 
-    heroImage: "/images/services/software/marketplaces/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const marketplacesDetail: ServiceDetail = {
 
         description: "Un marketplace es una plataforma digital que permite que múltiples vendedores ofrezcan sus productos o servicios a compradores en un solo lugar. El operador del marketplace facilita la transacción y puede ganar comisiones.",
 
-        image: "/images/subservices/marketplaces/marketplace.png",
+        image: "/images/subservices/software/marketplaces.png",
 
         imageAlt: "Marketplace multi-vendedor",
 

@@ -18,7 +18,7 @@ export const customCrmDetail: ServiceDetail = {
 
     icon: "database",
 
-    heroImage: "/images/services/software/custom-crm/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const customCrmDetail: ServiceDetail = {
 
         description: "Un CRM (Customer Relationship Management) es un sistema que gestiona las relaciones con clientes. Incluye seguimiento de contactos, gestión de oportunidades, historial de interacciones y herramientas de ventas.",
 
-      image: "/images/subservices/custom-crm/crm.png",
+      image: "/images/subservices/software/cmr-custom.png",
 
       imageAlt: "CRM personalizado",
 

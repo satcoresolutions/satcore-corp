@@ -18,7 +18,7 @@ export const customWebsitesDetail: ServiceDetail = {
 
     icon: "globe",
 
-    heroImage: "/images/services/software/custom-websites/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const customWebsitesDetail: ServiceDetail = {
 
         description: "Un sitio web personalizado es una aplicación web desarrollada específicamente para tus requisitos únicos. No utiliza plantillas genéricas, sino que se construye desde cero para cumplir tus objetivos específicos.",
 
-        image: "/images/subservices/custom-websites/custom.png",
+        image: "/images/subservices/software/custom-website.png",
 
         imageAlt: "Sitio web personalizado",
 

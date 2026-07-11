@@ -18,7 +18,7 @@ export const businessAutomationDetail: ServiceDetail = {
 
     icon: "settings",
 
-    heroImage: "/images/services/software/business-automation/hero/hero.png",
+    heroImage: "/images/services/software/hero/hero.png",
 
     plans: [],
   },
@@ -36,7 +36,7 @@ export const businessAutomationDetail: ServiceDetail = {
 
         description: "La automatización de procesos consiste en utilizar tecnología para ejecutar tareas repetitivas de forma automática, sin intervención manual. Esto incluye flujos de trabajo, integraciones, notificaciones automáticas y más.",
 
-        image: "/images/subservices/business-automation/automation.png",
+        image: "/images/subservices/software/calendar-system.png",
 
         imageAlt: "Automatización de procesos",
 
