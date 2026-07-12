@@ -3,8 +3,8 @@ import type {
 } from "@/types/service-detail.types";
 
 import {
-  softwarePlans,
-} from "@/data/plans/software/landing-pages";
+  professionalPortfolios,
+} from "@/data/plans/software/professional-portfolios";
 
 export const professionalPortfoliosDetail: ServiceDetail = {
   core: {
@@ -20,7 +20,7 @@ export const professionalPortfoliosDetail: ServiceDetail = {
 
     heroImage: "/images/services/software/professional-portfolios/hero/hero.png",
 
-    plans: [],
+    plans: professionalPortfolios,
   },
 
   translations: {
@@ -36,7 +36,7 @@ export const professionalPortfoliosDetail: ServiceDetail = {
 
         description: "Un portafolio profesional es un sitio web que展示 tu trabajo, proyectos y habilidades. Es esencial para demostrar tu experiencia y atraer clientes o empleadores potenciales.",
 
-        image: "/images/subservices/professional-portfolios/portfolio.png",
+        image: "/images/subservices/software/portfolio.png",
 
         imageAlt: "Portafolio profesional",
 

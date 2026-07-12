@@ -7,7 +7,7 @@ export const webCorporativa: PortfolioProject = {
     "web-corporativa",
 
   plan:
-    "landing-page-basic",
+    "basic-corporate",
 
   category:
     "software",

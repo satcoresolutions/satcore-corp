@@ -7,7 +7,7 @@ export const portafolioProfesional: PortfolioProject = {
     "portafolio-profesional",
 
   plan:
-    "landing-page-basic",
+    "personal-portfolio",
 
   category:
     "software",

@@ -7,7 +7,7 @@ export const landingVanguardia: PortfolioProject = {
     "landing-vanguardia",
 
   plan:
-    "landing-page-basic",
+    "commercial-landing",
 
   category:
     "software",

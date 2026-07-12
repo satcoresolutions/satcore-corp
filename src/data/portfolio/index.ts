@@ -37,12 +37,13 @@ import {
 import {
   personalCardTemplate
 } from "./personal-card-template";
+import { premiumCorporateTemplate } from "./premium-corporate-template";
 
 export const portfolioData = [
   personalCardTemplate,
   digitalCatalogTemplate,
   commercialLandingTemplate,
-
+  premiumCorporateTemplate,
   landingVanguardia,
   generadorContrasenas,
   portafolioDev,

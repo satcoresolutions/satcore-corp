@@ -3,8 +3,8 @@ import type {
 } from "@/types/service-detail.types";
 
 import {
-  softwarePlans,
-} from "@/data/plans/software/landing-pages";
+  ecommerceSystems,
+} from "@/data/plans/software/ecommerce";
 
 export const ecommerceDetail: ServiceDetail = {
   core: {
@@ -20,7 +20,7 @@ export const ecommerceDetail: ServiceDetail = {
 
     heroImage: "/images/services/software/hero/hero.png",
 
-    plans: [],
+    plans: ecommerceSystems,
   },
 
   translations: {
