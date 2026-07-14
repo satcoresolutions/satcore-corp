@@ -1,6 +1,8 @@
 export const siteConfig = {
   name: "SatCore Solutions",
 
+  shortName: "SatCore",
+
   slug: "satcore-solutions",
 
   url: "https://www.satcore.solutions",

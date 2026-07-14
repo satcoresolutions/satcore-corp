@@ -11,5 +11,5 @@ export const assetsConfig: AssetsConfig = {
   android192:    "/android-192.png",
   android512:    "/android-512.png",
   ogImage:       "/og-image.png",
-  twitterCard:   "/twitter-card.png",
+  twitterCard:   "/og-image.png",
 };

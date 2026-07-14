@@ -7,7 +7,7 @@ export const generadorContrasenas: PortfolioProject = {
     "generador-contrasenas",
 
    plan:
-    "landing-page-basic",
+    "calculators",
 
   category:
     "cybersecurity",

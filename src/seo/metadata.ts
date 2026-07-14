@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import { siteConfig }  from "@/config/site.config";
+import { siteConfig } from "@/config/site.config";
 import { assetsConfig } from "@/config/assets.config";
-import { siteContent }  from "@/i18n/site.content";
+import { siteContent } from "@/i18n/site.content";
 
 const { description } = siteContent["es"];
 
@@ -30,6 +30,10 @@ export const baseMetadata: Metadata = {
     },
   ],
 
+  applicationName: siteConfig.name,
+
+  category: "Technology",
+
   creator:
     siteConfig.name,
 
@@ -47,8 +51,10 @@ export const baseMetadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-image-preview":
-        "large",
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 

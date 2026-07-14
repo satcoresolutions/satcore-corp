@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
-import { siteConfig }  from "@/config/site.config";
+import { siteConfig } from "@/config/site.config";
 import { assetsConfig } from "@/config/assets.config";
-import { siteContent }  from "@/i18n/site.content";
+import { siteContent } from "@/i18n/site.content";
 
 const { description } = siteContent["es"];
 
 export const openGraphMetadata:
-Metadata["openGraph"] = {
+  Metadata["openGraph"] = {
   type: "website",
 
   locale:
@@ -26,8 +26,7 @@ Metadata["openGraph"] = {
 
   images: [
     {
-      url:
-        assetsConfig.ogImage,
+      url: `${siteConfig.url}${assetsConfig.ogImage}`,
 
       width: 1200,
 
@@ -40,7 +39,7 @@ Metadata["openGraph"] = {
 };
 
 export const twitterMetadata:
-Metadata["twitter"] = {
+  Metadata["twitter"] = {
   card:
     "summary_large_image",
 
@@ -51,6 +50,8 @@ Metadata["twitter"] = {
 
   creator:
     "@satcore_solutions",
+
+  site: "@satcore_solutions",
 
   images: [
     assetsConfig.twitterCard,
