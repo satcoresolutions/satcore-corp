@@ -35,9 +35,24 @@ import {
 } from "./commercial-landing-template";
 
 import {
+  wayraToursBookingProject
+} from "./wayraToursBookingProject";
+
+import {
+  tallerArtesanalProject
+} from "./tallerArtesanalProject";
+
+import {
   personalCardTemplate
 } from "./personal-card-template";
-import { premiumCorporateTemplate } from "./premium-corporate-template";
+
+import {
+  premiumCorporateTemplate
+} from "./premium-corporate-template";
+
+import {
+  pizzeriaDsofyProject
+} from "./pizzeriaDsofyProject";
 
 export const portfolioData = [
   personalCardTemplate,
@@ -51,4 +66,7 @@ export const portfolioData = [
   webCorporativa,
   landingAgenciaViajes,
   landingInmobiliaria,
+  wayraToursBookingProject,
+  tallerArtesanalProject,
+  pizzeriaDsofyProject,
 ];

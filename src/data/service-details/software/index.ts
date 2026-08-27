@@ -1,10 +1,10 @@
 import {
-  administrativeDashboardsDetail,
-} from "./administrative-dashboards.detail";
-
-import {
   advancedUtilitiesAndWebToolsDetail,
 } from "./advanced-utilities-and-web-tools.detail";
+
+import {
+  administrativeDashboardsDetail,
+} from "./administrative-dashboards.detail";
 
 import {
   aiAssistantSolutionsDetail,
@@ -19,10 +19,6 @@ import {
 } from "./blogs-and-digital-media.detail";
 
 import {
-  bookingAndAppointmentsDetail,
-} from "./booking-and-appointments.detail";
-
-import {
   businessAutomationDetail,
 } from "./business-automation.detail";
 
@@ -31,12 +27,12 @@ import {
 } from "./business-websites.detail";
 
 import {
-  customCrmDetail,
-} from "./custom-crm.detail";
+  bookingAndAppointmentsDetail,
+} from "./booking-and-appointments.detail";
 
 import {
-  customWebsitesDetail,
-} from "./custom-websites.detail";
+  communicationSystemsDetail,
+} from "./communication-systems.detail";
 
 import {
   digitalCommunitiesDetail,
@@ -59,10 +55,6 @@ import {
 } from "./elearning-systems.detail";
 
 import {
-  enterpriseResourcePlanningDetail,
-} from "./enterprise-resource-planning.detail";
-
-import {
   fileAndDocumentManagementDetail,
 } from "./file-and-document-management.detail";
 
@@ -83,6 +75,10 @@ import {
 } from "./membership-platforms.detail";
 
 import {
+  systemPortalsDetail,
+} from "./system-portals.detail";
+
+import {
   professionalPortfoliosDetail,
 } from "./professional-portfolios.detail";
 
@@ -95,10 +91,6 @@ import {
 } from "./reporting-and-document-generation.detail";
 
 import {
-  reservationPlatformsDetail,
-} from "./reservation-platforms.detail";
-
-import {
   saasProductsDetail,
 } from "./saas-products.detail";
 
@@ -107,30 +99,24 @@ import {
 } from "./scheduling-and-calendar-systems.detail";
 
 import {
-  socialNetworkingPlatformsDetail,
-} from "./social-networking-platforms.detail";
-
-import {
-  webAndMobileAppsDetail,
-} from "./web-and-mobile-apps.detail";
+  systemDocumentationDetail,
+} from "./system-documentation-detail";
 
 export const softwareServicePages = [
-  administrativeDashboardsDetail,
   advancedUtilitiesAndWebToolsDetail,
+  administrativeDashboardsDetail,
   aiAssistantSolutionsDetail,
   authenticationModulesDetail,
   blogsAndDigitalMediaDetail,
   bookingAndAppointmentsDetail,
   businessAutomationDetail,
   businessWebsitesDetail,
-  customCrmDetail,
-  customWebsitesDetail,
+  communicationSystemsDetail,
   digitalCommunitiesDetail,
   digitalPresentationCardsDetail,
   directoriesDetail,
   ecommerceDetail,
   elearningSystemsDetail,
-  enterpriseResourcePlanningDetail,
   fileAndDocumentManagementDetail,
   formAutomationSystemsDetail,
   landingPagesDetail,
@@ -139,9 +125,8 @@ export const softwareServicePages = [
   professionalPortfoliosDetail,
   projectManagementSystemsDetail,
   reportingAndDocumentGenerationDetail,
-  reservationPlatformsDetail,
   saasProductsDetail,
   schedulingAndCalendarSystemsDetail,
-  socialNetworkingPlatformsDetail,
-  webAndMobileAppsDetail,
+  systemDocumentationDetail,
+  systemPortalsDetail,
 ];

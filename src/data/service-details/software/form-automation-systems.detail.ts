@@ -2,9 +2,7 @@ import type {
   ServiceDetail,
 } from "@/types/service-detail.types";
 
-import {
-  softwarePlans,
-} from "@/data/plans/software/landing-pages";
+import { formAutomationSystems, } from "@/data/plans/software/form-automation-systems";
 
 export const formAutomationSystemsDetail: ServiceDetail = {
   core: {
@@ -20,7 +18,7 @@ export const formAutomationSystemsDetail: ServiceDetail = {
 
     heroImage: "/images/services/software/hero/hero.png",
 
-    plans: [],
+    plans: formAutomationSystems,
   },
 
   translations: {

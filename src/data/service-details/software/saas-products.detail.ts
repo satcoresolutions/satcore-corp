@@ -2,9 +2,7 @@ import type {
   ServiceDetail,
 } from "@/types/service-detail.types";
 
-import {
-  softwarePlans,
-} from "@/data/plans/software/landing-pages";
+import { saas, } from "@/data/plans/software/saas-products";
 
 export const saasProductsDetail: ServiceDetail = {
   core: {
@@ -20,7 +18,7 @@ export const saasProductsDetail: ServiceDetail = {
 
     heroImage: "/images/services/software/hero/hero.png",
 
-    plans: [],
+    plans: saas,
   },
 
   translations: {

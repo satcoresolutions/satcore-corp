@@ -2,9 +2,7 @@ import type {
   ServiceDetail,
 } from "@/types/service-detail.types";
 
-import {
-  softwarePlans,
-} from "@/data/plans/software/landing-pages";
+import { schedulingCalendarSystems, } from "@/data/plans/software/scheduling-and-calendar-systems";
 
 export const schedulingAndCalendarSystemsDetail: ServiceDetail = {
   core: {
@@ -20,7 +18,7 @@ export const schedulingAndCalendarSystemsDetail: ServiceDetail = {
 
     heroImage: "/images/services/software/hero/hero.png",
 
-    plans: [],
+    plans: schedulingCalendarSystems,
   },
 
   translations: {

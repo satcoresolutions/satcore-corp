@@ -2,9 +2,7 @@ import type {
   ServiceDetail,
 } from "@/types/service-detail.types";
 
-import {
-  softwarePlans,
-} from "@/data/plans/software/landing-pages";
+import { fileDocumentManagement, } from "@/data/plans/software/file-and-document-management";
 
 export const fileAndDocumentManagementDetail: ServiceDetail = {
   core: {
@@ -20,7 +18,7 @@ export const fileAndDocumentManagementDetail: ServiceDetail = {
 
     heroImage: "/images/services/software/hero/hero.png",
 
-    plans: [],
+    plans: fileDocumentManagement,
   },
 
   translations: {

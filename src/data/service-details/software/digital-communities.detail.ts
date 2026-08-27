@@ -2,9 +2,7 @@ import type {
   ServiceDetail,
 } from "@/types/service-detail.types";
 
-import {
-  softwarePlans,
-} from "@/data/plans/software/landing-pages";
+import { communities, } from "@/data/plans/software/digital-communities";
 
 export const digitalCommunitiesDetail: ServiceDetail = {
   core: {
@@ -20,7 +18,7 @@ export const digitalCommunitiesDetail: ServiceDetail = {
 
     heroImage: "/images/services/software/hero/hero.png",
 
-    plans: [],
+    plans: communities,
   },
 
   translations: {

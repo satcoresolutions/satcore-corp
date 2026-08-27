@@ -11,19 +11,21 @@ import type {
 const useServicesByPillar = (
   pillar: PillarSlug,
 ) => {
+  const services = useServices();
 
-  const services =
-    useServices();
+  console.log("TOTAL SERVICES:", services.length);
+
+  services.forEach((service, index) => {
+    console.log(`SERVICE ${index}:`, service);
+  });
 
   return useMemo(
     () =>
       services.filter(
-        service =>
-          service.core.pillar === pillar
+        service => service?.core?.pillar === pillar
       ),
     [services, pillar],
   );
-
 };
 
 export default useServicesByPillar;

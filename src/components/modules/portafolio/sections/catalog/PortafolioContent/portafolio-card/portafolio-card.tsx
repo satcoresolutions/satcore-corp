@@ -10,6 +10,10 @@ import {
 } from "@/hooks/use-language";
 
 import {
+  plansData,
+} from "@/data/plans";
+
+import {
   portfolioCardContent,
 } from "./content/portafolio-card.content";
 
@@ -27,6 +31,12 @@ export default function PortfolioCard({
 
   const translation =
     project.translations[lang];
+
+  const plan = plansData.find(
+    (item) => item.core.slug === project.plan
+  );
+
+  const planTitle = plan?.translations[lang].title;
 
   return (
     <Card
@@ -80,15 +90,26 @@ export default function PortfolioCard({
       >
         <span
           className="
-        text-[11px]
-        uppercase
-        tracking-[0.2em]
-        text-primary
-      "
+    text-[11px]
+    uppercase
+    tracking-[0.2em]
+    text-primary
+  "
         >
           {translation.category}
         </span>
 
+        <span
+          className="
+    mt-1
+    text-xs
+    uppercase
+    tracking-[0.12em]
+    text-surface
+  "
+        >
+          {planTitle}
+        </span>
         <h5
           className="
         mt-2
