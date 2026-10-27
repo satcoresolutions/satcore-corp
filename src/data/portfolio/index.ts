@@ -54,7 +54,79 @@ import {
   pizzeriaDsofyProject
 } from "./pizzeriaDsofyProject";
 
+import {
+  calculadoraPreciosDetail,
+} from "./calculadora-precios.detail";
+
+import {
+  comandasDigitalesDetail,
+} from "./comandas-digitales.detail";
+
+import {
+  cuponeraDigitalDetail,
+} from "./cuponera-digital.detail";
+
+import {
+  controlVentasDetail,
+} from "./control-ventas.detail";
+
+import {
+  controlCajaDetail,
+} from "./control-caja.detail";
+
+import {
+  generadorCotizacionesDetail,
+} from "./generador-cotizaciones.detail";
+
+import {
+  generadorFacturasDetail,
+} from "./generador-facturas.detail";
+
+import {
+  generadorRecibosDetail,
+} from "./generador-recibos.detail";
+
+import {
+  historialComprasDetail,
+} from "./historial-compras.detail";
+
+import {
+  listaClientesDetail,
+} from "./lista-clientes.detail";
+
+import {
+  menuDigitalQrDetail,
+} from "./menu-digital-qr.detail";
+
+import {
+  programaFidelizacionDetail,
+} from "./programa-fidelizacion.detail";
+
+import { satcoreCardDetail } from "./satcore-card.detail";
+
+import { satcoreQrDetail } from "./satcore-qr.detail";
+
+import { catalogoBasicoDetail } from "./catalogo-basico.detail";
+
+import { catalogoPedidosDetail } from "./catalogo-pedidos.detail";
+
 export const portfolioData = [
+  calculadoraPreciosDetail,
+  comandasDigitalesDetail,
+  cuponeraDigitalDetail,
+  controlVentasDetail,
+  controlCajaDetail,
+  generadorCotizacionesDetail,
+  generadorFacturasDetail,
+  generadorRecibosDetail,
+  historialComprasDetail,
+  listaClientesDetail,
+  catalogoBasicoDetail,
+  menuDigitalQrDetail,
+  catalogoPedidosDetail,
+  satcoreCardDetail,
+  satcoreQrDetail,
+  programaFidelizacionDetail,
   personalCardTemplate,
   digitalCatalogTemplate,
   commercialLandingTemplate,
