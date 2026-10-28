@@ -19,7 +19,11 @@ export const navigationConfig = {
     {
       key: "blog",
       href: "/blog",
-    }
+    },
+    {
+      key: "store",
+      href: "/tienda",
+    },
   ],
 
   footer: [
@@ -36,13 +40,17 @@ export const navigationConfig = {
       href: "/portfolio",
     },
     {
+      key: "store",
+      href: "/tienda",
+    },
+    {
       key: "contact",
       href: "/contact",
     },
     {
       key: "blog",
       href: "/blog",
-    }
+    },
   ],
 
   legal: [
